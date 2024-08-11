@@ -49,7 +49,7 @@ export default function HomePage() {
                         <div className="tp-banner-item-2 p-relative z-index-1 grey-bg-2 mb-20 fix">
                             <div className="tp-banner-thumb-2 include-bg transition-3" style={{background:'url(/assets/img/banner/2/banner-3.jpg) center'}}></div>
                             <h3 className="tp-banner-title-2">
-                            <a href="#">Men Tennis <br/> Walking Shoes</a>
+                            <a href="#">Winter <br/> wear</a>
                             </h3>
                             <div className="tp-banner-btn-2">
                             <a href="#" className="tp-btn tp-btn-border tp-btn-border-sm">Shop Now 

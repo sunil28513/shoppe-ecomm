@@ -69,14 +69,14 @@ const Featured = () => {
               </SwiperSlide>
               <SwiperSlide>
                   <div class="tp-featured-item swiper-slide white-bg p-relative z-index-1">
-                      <div class="tp-featured-thumb include-bg" style={{background:'url(assets/img/product/slider/product-slider-2.jpg)'}}></div>
+                      <div class="tp-featured-thumb include-bg" style={{background:'url(assets/img/product/slider/product-slider-1.jpg)'}}></div>
                       <div class="tp-featured-content">
                         <h3 class="tp-featured-title">
-                            <a href="product-details.html">Non Slip Athletic <br/> Tennis Walking</a>
+                            <a href="product-details.html">Clothing <br/> Collection 2023</a>
                         </h3>
                         <div class="tp-featured-price-wrapper">
-                            <span class="tp-featured-price new-price">$220.00</span>
-                            <span class="tp-featured-price old-price">$350.00</span>
+                            <span class="tp-featured-price new-price">$102.00</span>
+                            <span class="tp-featured-price old-price">$226.00</span>
                         </div>
                         <div class="tp-product-rating-icon tp-product-rating-icon-2">
                             <span><i class="fa-solid fa-star"></i></span>
@@ -98,14 +98,14 @@ const Featured = () => {
               </SwiperSlide>
               <SwiperSlide>
                   <div class="tp-featured-item swiper-slide white-bg p-relative z-index-1">
-                      <div class="tp-featured-thumb include-bg" style={{background:'url(assets/img/product/slider/product-slider-3.jpg)'}}></div>
+                      <div class="tp-featured-thumb include-bg" style={{background:'url(assets/img/product/slider/product-slider-1.jpg)'}}></div>
                       <div class="tp-featured-content">
                         <h3 class="tp-featured-title">
-                            <a href="product-details.html">Vera Bradley <br/> Straw Tote Bag</a>
+                            <a href="product-details.html">Clothing <br/> Collection 2023</a>
                         </h3>
                         <div class="tp-featured-price-wrapper">
-                            <span class="tp-featured-price new-price">$46.00</span>
-                            <span class="tp-featured-price old-price">$96.00</span>
+                            <span class="tp-featured-price new-price">$102.00</span>
+                            <span class="tp-featured-price old-price">$226.00</span>
                         </div>
                         <div class="tp-product-rating-icon tp-product-rating-icon-2">
                             <span><i class="fa-solid fa-star"></i></span>
@@ -127,10 +127,10 @@ const Featured = () => {
               </SwiperSlide>
               <SwiperSlide>
                   <div class="tp-featured-item swiper-slide white-bg p-relative z-index-1">
-                      <div class="tp-featured-thumb include-bg" style={{background:'url(assets/img/product/slider/product-slider-4.jpg)'}}></div>
+                      <div class="tp-featured-thumb include-bg" style={{background:'url(assets/img/product/slider/product-slider-1.jpg)'}}></div>
                       <div class="tp-featured-content">
                         <h3 class="tp-featured-title">
-                            <a href="product-details.html">Gucci Women’s <br/> Black Leather Bag</a>
+                            <a href="product-details.html">Clothing <br/> Collection 2023</a>
                         </h3>
                         <div class="tp-featured-price-wrapper">
                             <span class="tp-featured-price new-price">$102.00</span>
