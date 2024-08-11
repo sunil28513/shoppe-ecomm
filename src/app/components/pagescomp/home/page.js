@@ -1,3 +1,4 @@
+import { FaArrowRightLong } from "react-icons/fa6";
 import Banner from "./Banner";
 import Popular from "./Popular";
 import ProductList from "./productlist/ProductList";
@@ -20,11 +21,9 @@ export default function HomePage() {
                             <a href="#">Top wear <br/> women</a>
                             </h3>
                             <div className="tp-banner-btn-2">
-                            <a href="#" className="tp-btn tp-btn-border tp-btn-border-sm">Shop Now 
-                                <svg width="17" height="15" viewBox="0 0 17 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M16 7.49988L1 7.49988" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                    <path d="M9.9502 1.47554L16.0002 7.49954L9.9502 13.5245" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                </svg>
+                            <a href="#" className="tp-btn tp-btn-border tp-btn-border-sm">
+                                <span className="me-1">Shop Now </span>
+                                <FaArrowRightLong/>
                             </a>
                             </div>
                         </div>
@@ -36,11 +35,9 @@ export default function HomePage() {
                             <a href="#">Top wear <br/> men</a>
                             </h3>
                             <div className="tp-banner-btn-2">
-                            <a href="#" className="tp-btn tp-btn-border tp-btn-border-sm">Shop Now 
-                                <svg width="17" height="15" viewBox="0 0 17 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M16 7.49988L1 7.49988" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                    <path d="M9.9502 1.47554L16.0002 7.49954L9.9502 13.5245" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                </svg>
+                            <a href="#" className="tp-btn tp-btn-border tp-btn-border-sm">
+                                <span className="me-1">Shop Now </span>
+                                <FaArrowRightLong/>
                             </a>
                             </div>
                         </div>
@@ -52,11 +49,9 @@ export default function HomePage() {
                             <a href="#">Winter <br/> wear</a>
                             </h3>
                             <div className="tp-banner-btn-2">
-                            <a href="#" className="tp-btn tp-btn-border tp-btn-border-sm">Shop Now 
-                                <svg width="17" height="15" viewBox="0 0 17 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M16 7.49988L1 7.49988" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                    <path d="M9.9502 1.47554L16.0002 7.49954L9.9502 13.5245" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                </svg>
+                            <a href="#" className="tp-btn tp-btn-border tp-btn-border-sm">
+                                <span className="me-1">Shop Now </span>
+                                <FaArrowRightLong/>
                             </a>
                             </div>
                         </div>
@@ -68,11 +63,9 @@ export default function HomePage() {
                             <a href="#">Summer wear <br/> wear</a>
                             </h3>
                             <div className="tp-banner-btn-2">
-                            <a href="#" className="tp-btn tp-btn-border tp-btn-border-sm">Shop Now 
-                                <svg width="17" height="15" viewBox="0 0 17 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M16 7.49988L1 7.49988" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                    <path d="M9.9502 1.47554L16.0002 7.49954L9.9502 13.5245" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                </svg>
+                            <a href="#" className="tp-btn tp-btn-border tp-btn-border-sm">
+                                <span className="me-1">Shop Now </span>
+                                <FaArrowRightLong/>
                             </a>
                             </div>
                         </div>

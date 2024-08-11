@@ -3,6 +3,7 @@ import React, { useRef, useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import 'swiper/css/navigation';
 import { Navigation, Pagination, Autoplay } from 'swiper/modules';
+import { FaArrowRightLong } from "react-icons/fa6";
 
 const Featured = () => {
   const prevRef = useRef(null);
@@ -51,116 +52,104 @@ const Featured = () => {
               modules={[Navigation, Pagination]}
           >
               <SwiperSlide>
-                  <div class="tp-featured-item swiper-slide white-bg p-relative z-index-1">
-                      <div class="tp-featured-thumb include-bg" style={{background:'url(assets/img/product/slider/product-slider-1.jpg)'}}></div>
-                      <div class="tp-featured-content">
-                        <h3 class="tp-featured-title">
+                  <div className="tp-featured-item swiper-slide white-bg p-relative z-index-1">
+                      <div className="tp-featured-thumb include-bg" style={{background:'url(assets/img/product/slider/product-slider-1.jpg)'}}></div>
+                      <div className="tp-featured-content">
+                        <h3 className="tp-featured-title">
                             <a href="product-details.html">Clothing <br/> Collection 2023</a>
                         </h3>
-                        <div class="tp-featured-price-wrapper">
-                            <span class="tp-featured-price new-price">$102.00</span>
-                            <span class="tp-featured-price old-price">$226.00</span>
+                        <div className="tp-featured-price-wrapper">
+                            <span className="tp-featured-price new-price">$102.00</span>
+                            <span className="tp-featured-price old-price">$226.00</span>
                         </div>
-                        <div class="tp-product-rating-icon tp-product-rating-icon-2">
-                            <span><i class="fa-solid fa-star"></i></span>
-                            <span><i class="fa-solid fa-star"></i></span>
-                            <span><i class="fa-solid fa-star"></i></span>
-                            <span><i class="fa-solid fa-star"></i></span>
-                            <span><i class="fa-solid fa-star"></i></span>
+                        <div className="tp-product-rating-icon tp-product-rating-icon-2">
+                            <span><i className="fa-solid fa-star"></i></span>
+                            <span><i className="fa-solid fa-star"></i></span>
+                            <span><i className="fa-solid fa-star"></i></span>
+                            <span><i className="fa-solid fa-star"></i></span>
+                            <span><i className="fa-solid fa-star"></i></span>
                         </div>
-                        <div class="tp-featured-btn">
-                            <a href="product-details.html" class="tp-btn tp-btn-border tp-btn-border-sm">Shop Now 
-                              <svg width="17" height="15" viewBox="0 0 17 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                  <path d="M16 7.49988L1 7.49988" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                  <path d="M9.9502 1.47554L16.0002 7.49954L9.9502 13.5245" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                              </svg>
+                        <div className="tp-featured-btn">
+                            <a href="product-details.html" className="tp-btn tp-btn-border tp-btn-border-sm">Shop Now 
+                            <FaArrowRightLong/>
                             </a>
                         </div>
                       </div>
                   </div>
               </SwiperSlide>
               <SwiperSlide>
-                  <div class="tp-featured-item swiper-slide white-bg p-relative z-index-1">
-                      <div class="tp-featured-thumb include-bg" style={{background:'url(assets/img/product/slider/product-slider-1.jpg)'}}></div>
-                      <div class="tp-featured-content">
-                        <h3 class="tp-featured-title">
+                  <div className="tp-featured-item swiper-slide white-bg p-relative z-index-1">
+                      <div className="tp-featured-thumb include-bg" style={{background:'url(assets/img/product/slider/product-slider-1.jpg)'}}></div>
+                      <div className="tp-featured-content">
+                        <h3 className="tp-featured-title">
                             <a href="product-details.html">Clothing <br/> Collection 2023</a>
                         </h3>
-                        <div class="tp-featured-price-wrapper">
-                            <span class="tp-featured-price new-price">$102.00</span>
-                            <span class="tp-featured-price old-price">$226.00</span>
+                        <div className="tp-featured-price-wrapper">
+                            <span className="tp-featured-price new-price">$102.00</span>
+                            <span className="tp-featured-price old-price">$226.00</span>
                         </div>
-                        <div class="tp-product-rating-icon tp-product-rating-icon-2">
-                            <span><i class="fa-solid fa-star"></i></span>
-                            <span><i class="fa-solid fa-star"></i></span>
-                            <span><i class="fa-solid fa-star"></i></span>
-                            <span><i class="fa-solid fa-star"></i></span>
-                            <span><i class="fa-solid fa-star"></i></span>
+                        <div className="tp-product-rating-icon tp-product-rating-icon-2">
+                            <span><i className="fa-solid fa-star"></i></span>
+                            <span><i className="fa-solid fa-star"></i></span>
+                            <span><i className="fa-solid fa-star"></i></span>
+                            <span><i className="fa-solid fa-star"></i></span>
+                            <span><i className="fa-solid fa-star"></i></span>
                         </div>
-                        <div class="tp-featured-btn">
-                            <a href="product-details.html" class="tp-btn tp-btn-border tp-btn-border-sm">Shop Now 
-                              <svg width="17" height="15" viewBox="0 0 17 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                  <path d="M16 7.49988L1 7.49988" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                  <path d="M9.9502 1.47554L16.0002 7.49954L9.9502 13.5245" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                              </svg>
+                        <div className="tp-featured-btn">
+                            <a href="product-details.html" className="tp-btn tp-btn-border tp-btn-border-sm">Shop Now 
+                            <FaArrowRightLong/>
                             </a>
                         </div>
                       </div>
                   </div>
               </SwiperSlide>
               <SwiperSlide>
-                  <div class="tp-featured-item swiper-slide white-bg p-relative z-index-1">
-                      <div class="tp-featured-thumb include-bg" style={{background:'url(assets/img/product/slider/product-slider-1.jpg)'}}></div>
-                      <div class="tp-featured-content">
-                        <h3 class="tp-featured-title">
+                  <div className="tp-featured-item swiper-slide white-bg p-relative z-index-1">
+                      <div className="tp-featured-thumb include-bg" style={{background:'url(assets/img/product/slider/product-slider-1.jpg)'}}></div>
+                      <div className="tp-featured-content">
+                        <h3 className="tp-featured-title">
                             <a href="product-details.html">Clothing <br/> Collection 2023</a>
                         </h3>
-                        <div class="tp-featured-price-wrapper">
-                            <span class="tp-featured-price new-price">$102.00</span>
-                            <span class="tp-featured-price old-price">$226.00</span>
+                        <div className="tp-featured-price-wrapper">
+                            <span className="tp-featured-price new-price">$102.00</span>
+                            <span className="tp-featured-price old-price">$226.00</span>
                         </div>
-                        <div class="tp-product-rating-icon tp-product-rating-icon-2">
-                            <span><i class="fa-solid fa-star"></i></span>
-                            <span><i class="fa-solid fa-star"></i></span>
-                            <span><i class="fa-solid fa-star"></i></span>
-                            <span><i class="fa-solid fa-star"></i></span>
-                            <span><i class="fa-solid fa-star"></i></span>
+                        <div className="tp-product-rating-icon tp-product-rating-icon-2">
+                            <span><i className="fa-solid fa-star"></i></span>
+                            <span><i className="fa-solid fa-star"></i></span>
+                            <span><i className="fa-solid fa-star"></i></span>
+                            <span><i className="fa-solid fa-star"></i></span>
+                            <span><i className="fa-solid fa-star"></i></span>
                         </div>
-                        <div class="tp-featured-btn">
-                            <a href="product-details.html" class="tp-btn tp-btn-border tp-btn-border-sm">Shop Now 
-                              <svg width="17" height="15" viewBox="0 0 17 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                  <path d="M16 7.49988L1 7.49988" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                  <path d="M9.9502 1.47554L16.0002 7.49954L9.9502 13.5245" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                              </svg>
+                        <div className="tp-featured-btn">
+                            <a href="product-details.html" className="tp-btn tp-btn-border tp-btn-border-sm">Shop Now 
+                            <FaArrowRightLong/>
                             </a>
                         </div>
                       </div>
                   </div>
               </SwiperSlide>
               <SwiperSlide>
-                  <div class="tp-featured-item swiper-slide white-bg p-relative z-index-1">
-                      <div class="tp-featured-thumb include-bg" style={{background:'url(assets/img/product/slider/product-slider-1.jpg)'}}></div>
-                      <div class="tp-featured-content">
-                        <h3 class="tp-featured-title">
+                  <div className="tp-featured-item swiper-slide white-bg p-relative z-index-1">
+                      <div className="tp-featured-thumb include-bg" style={{background:'url(assets/img/product/slider/product-slider-1.jpg)'}}></div>
+                      <div className="tp-featured-content">
+                        <h3 className="tp-featured-title">
                             <a href="product-details.html">Clothing <br/> Collection 2023</a>
                         </h3>
-                        <div class="tp-featured-price-wrapper">
-                            <span class="tp-featured-price new-price">$102.00</span>
-                            <span class="tp-featured-price old-price">$226.00</span>
+                        <div className="tp-featured-price-wrapper">
+                            <span className="tp-featured-price new-price">$102.00</span>
+                            <span className="tp-featured-price old-price">$226.00</span>
                         </div>
-                        <div class="tp-product-rating-icon tp-product-rating-icon-2">
-                            <span><i class="fa-solid fa-star"></i></span>
-                            <span><i class="fa-solid fa-star"></i></span>
-                            <span><i class="fa-solid fa-star"></i></span>
-                            <span><i class="fa-solid fa-star"></i></span>
-                            <span><i class="fa-solid fa-star"></i></span>
+                        <div className="tp-product-rating-icon tp-product-rating-icon-2">
+                            <span><i className="fa-solid fa-star"></i></span>
+                            <span><i className="fa-solid fa-star"></i></span>
+                            <span><i className="fa-solid fa-star"></i></span>
+                            <span><i className="fa-solid fa-star"></i></span>
+                            <span><i className="fa-solid fa-star"></i></span>
                         </div>
-                        <div class="tp-featured-btn">
-                            <a href="product-details.html" class="tp-btn tp-btn-border tp-btn-border-sm">Shop Now 
-                              <svg width="17" height="15" viewBox="0 0 17 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                  <path d="M16 7.49988L1 7.49988" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                  <path d="M9.9502 1.47554L16.0002 7.49954L9.9502 13.5245" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                              </svg>
+                        <div className="tp-featured-btn">
+                            <a href="product-details.html" className="tp-btn tp-btn-border tp-btn-border-sm">Shop Now 
+                            <FaArrowRightLong/>
                             </a>
                         </div>
                       </div>
