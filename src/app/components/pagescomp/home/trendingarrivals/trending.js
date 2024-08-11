@@ -11,7 +11,7 @@ const Trending = () => {
     const nextRef = useRef(null);
   return (
     <>
-        <section class="tp-trending-area pt-140 pb-150">
+        <section class="tp-trending-area pt-60 pb-60">
             <div class="container">
                <div class="row justify-content-center">
                   <div class="col-xl-6 col-lg-6">

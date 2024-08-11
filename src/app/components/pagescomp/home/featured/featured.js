@@ -8,7 +8,7 @@ const Featured = () => {
   const prevRef = useRef(null);
   const nextRef = useRef(null);
   return (
-    <section className="tp-featured-slider-area grey-bg-6 fix pt-95 pb-120">
+    <section className="tp-featured-slider-area grey-bg-6 fix pt-60 pb-60">
       <div className="container">
         <div className="row">
           <div className="col-xl-12">
@@ -24,9 +24,20 @@ const Featured = () => {
           <Swiper 
               className="mySwiper"
               spaceBetween={10}
-              slidesPerView={3}
+              slidesPerView={1}
               pagination={{ clickable: true }}
               autoplay={{ delay: 3000 }}
+              breakpoints={{
+                640: {
+                  slidesPerView: 1,
+                },
+                768: {
+                  slidesPerView: 2,
+                },
+                1024: {
+                  slidesPerView: 3,
+                },
+              }}
               loop
               navigation={{
                 prevEl: prevRef.current,
@@ -36,7 +47,8 @@ const Featured = () => {
                 swiper.params.navigation.prevEl = prevRef.current;
                 swiper.params.navigation.nextEl = nextRef.current;
               }}
-              modules={[Navigation, Pagination, Autoplay]}
+              // modules={[Navigation, Pagination, Autoplay]}
+              modules={[Navigation, Pagination]}
           >
               <SwiperSlide>
                   <div class="tp-featured-item swiper-slide white-bg p-relative z-index-1">

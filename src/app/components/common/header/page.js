@@ -37,37 +37,37 @@ export default function Header() {
                                     </nav>
                                  </div>
                               </div>
-                        <div className="col-xl-5 col-lg-7 col-md-7 col-sm-8 col-6">
-                           <div className="tp-header-bottom-right d-flex align-items-center justify-content-end gap-4 pl-30">
-                              <div className="tp-header-search-2 d-none d-sm-block">
-                                 <form action="#">
-                                    <input type="text" placeholder="Search Products..." />
-                                    <button type="submit">
-                                       <FiSearch/>                                     
-                                    </button>
-                                 </form>
+                              <div className="col-xl-5 col-lg-7 col-md-7 col-sm-8 col-6">
+                                 <div className="tp-header-bottom-right d-flex align-items-center justify-content-end gap-4 pl-20 pe-2">
+                                    <div className="tp-header-search-2">
+                                       <form action="#">
+                                          <input type="text" placeholder="Search Products..." />
+                                          <button className='d-none d-sm-block' type="submit">
+                                             <FiSearch/>                                     
+                                          </button>
+                                       </form>
+                                    </div>
+                                    <div className="tp-header-action d-flex align-items-center ml-20">
+                                       <div className="tp-header-action-item d-none d-lg-block">
+                                          <a href="#" className="tp-header-action-btn">
+                                          <FaRegHeart/>
+                                             <span className="tp-header-action-badge">4</span>                          
+                                          </a>
+                                       </div>
+                                       <div className="tp-header-action-item">
+                                             <button className="tp-header-action-btn cartmini-open-btn" >
+                                             <BsHandbag/>   
+                                             <span className="tp-header-action-badge">13</span>                                                                          
+                                          </button>
+                                       </div>
+                                       <div className="d-none d-sm-block tp-header-action-item tp-header-hamburger mr-20 d-xl-none">
+                                          <button type="button" className="tp-offcanvas-open-btn">
+                                             <RiMenu3Line/>
+                                          </button>
+                                       </div>
+                                    </div>
+                                 </div>
                               </div>
-                              <div className="tp-header-action d-flex align-items-center ml-30">
-                                 <div className="tp-header-action-item d-none d-lg-block">
-                                    <a href="#" className="tp-header-action-btn">
-                                      <FaRegHeart/>
-                                       <span className="tp-header-action-badge">4</span>                          
-                                    </a>
-                                 </div>
-                                 <div className="tp-header-action-item">
-                                       <button className="tp-header-action-btn cartmini-open-btn" >
-                                       <BsHandbag/>   
-                                       <span className="tp-header-action-badge">13</span>                                                                          
-                                    </button>
-                                 </div>
-                                 <div className="tp-header-action-item tp-header-hamburger mr-20 d-xl-none">
-                                    <button type="button" className="tp-offcanvas-open-btn">
-                                       <RiMenu3Line/>
-                                    </button>
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
                            </div>
                         </div>
                      </div>

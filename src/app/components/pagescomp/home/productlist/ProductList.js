@@ -84,7 +84,7 @@ const ProductList = () => {
 
   return (
     <>
-            <section className="tp-product-area pb-90">
+            <section className="tp-product-area pt-60 pb-60">
                 <div className="container">
                     <div className="row">
                         <div className="col-xl-12">
@@ -124,7 +124,7 @@ const ProductList = () => {
                                 <Tab.Pane eventKey="all">
                                     <div className='row'>
                                         {products.map(product => (
-                                            <div key={product.id} className="col-xl-3 col-lg-4 col-md-6 col-sm-6">
+                                            <div key={product.id} className="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-6">
                                                 <div className="tp-product-item-2 mb-40">
                                                     <div className="product-list">
                                                         <ProductCard  product={product} />

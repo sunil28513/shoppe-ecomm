@@ -12,7 +12,7 @@ const Testimonials = () => {
     <>
 
 
-<section class="tp-testimonial-area grey-bg-7 pt-130 pb-135">
+<section class="tp-testimonial-area grey-bg-7 pt-100 pb-60">
             <div class="container">
                <div class="row justify-content-center">
                   <div class="col-xl-12">
