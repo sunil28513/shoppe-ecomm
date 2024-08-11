@@ -37,8 +37,8 @@ export default function Header() {
                      <div className="col">
                         <div className="tp-mobile-item text-center">
                            <a href="#" className="tp-mobile-item-btn">
-                              <BsHandbag/>
-                              <span>Cart</span>
+                              <FiSearch/>
+                              <span>Search</span>
                            </a>
                         </div>
                      </div>
