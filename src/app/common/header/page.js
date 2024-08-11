@@ -1,8 +1,10 @@
 import Image from 'next/image'
 import { FiSearch } from "react-icons/fi";
-import { FaRegHeart } from "react-icons/fa";
+import { FaRegHeart, FaRegUser   } from "react-icons/fa";
 import { BsHandbag } from "react-icons/bs";
 import { RiMenu3Line } from "react-icons/ri";
+import { MdOutlineHome } from "react-icons/md";
+
 import "swiper/css";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../../../spacing.css'
@@ -12,6 +14,54 @@ import Link from 'next/link';
 export default function Header() {
     return (
         <>
+
+            <div id="tp-bottom-menu-sticky" className="tp-mobile-menu d-lg-none">
+               <div className="container">
+                  <div className="row">
+                     <div className="col">
+                        <div className="tp-mobile-item text-center">
+                           <a href="#" className="tp-mobile-item-btn">
+                              <MdOutlineHome/>
+                              <span>Home</span>
+                           </a>
+                        </div>
+                     </div>
+                     <div className="col">
+                        <div className="tp-mobile-item text-center">
+                           <button className="tp-mobile-item-btn tp-search-open-btn">
+                              <FaRegHeart />
+                              <span>Wishlist</span>
+                           </button>
+                        </div>
+                     </div>
+                     <div className="col">
+                        <div className="tp-mobile-item text-center">
+                           <a href="#" className="tp-mobile-item-btn">
+                              <BsHandbag/>
+                              <span>Cart</span>
+                           </a>
+                        </div>
+                     </div>
+                     <div className="col">
+                        <div className="tp-mobile-item text-center">
+                           <a href="#" className="tp-mobile-item-btn">
+                              <FaRegUser/>
+                              <span>Account</span>
+                           </a>
+                        </div>
+                     </div>
+                     <div className="col">
+                        <div className="tp-mobile-item text-center">
+                           <button className="tp-mobile-item-btn tp-offcanvas-open-btn">
+                              <RiMenu3Line/>
+                              <span>Menu</span>
+                           </button>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+
             <header>
                <div className="tp-header-area tp-header-style-darkRed tp-header-height">
                   <div id="header-sticky" className="tp-header-bottom-2 tp-header-sticky">

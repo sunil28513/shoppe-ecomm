@@ -17,10 +17,9 @@
 }
 
 @media (max-width:575px){
-    /* .tp-banner-item-2 {
-        min-height: 215px !important;
-        padding: 40px 20px !important;
-    } */
+    .tp-slider-thumb-2-shape-2 {
+        right: 0px !important;
+    }
 }
 
 @media only screen and (min-width: 576px) and (max-width: 767px), (max-width: 575px) {
