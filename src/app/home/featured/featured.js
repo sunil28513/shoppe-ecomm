@@ -4,6 +4,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import 'swiper/css/navigation';
 import { Navigation, Pagination, Autoplay } from 'swiper/modules';
 import { FaArrowRightLong } from "react-icons/fa6";
+import Link from "next/link";
 
 const Featured = () => {
   const prevRef = useRef(null);
@@ -56,7 +57,7 @@ const Featured = () => {
                       <div className="tp-featured-thumb include-bg" style={{background:'url(assets/img/product/slider/product-slider-1.jpg)'}}></div>
                       <div className="tp-featured-content">
                         <h3 className="tp-featured-title">
-                            <a href="product-details.html">Clothing <br/> Collection 2023</a>
+                            <a href="#">Clothing <br/> Collection 2023</a>
                         </h3>
                         <div className="tp-featured-price-wrapper">
                             <span className="tp-featured-price new-price">$102.00</span>
@@ -70,9 +71,9 @@ const Featured = () => {
                             <span><i className="fa-solid fa-star"></i></span>
                         </div>
                         <div className="tp-featured-btn">
-                            <a href="product-details.html" className="tp-btn tp-btn-border tp-btn-border-sm">Shop Now 
+                            <Link href="/" className="tp-btn tp-btn-border tp-btn-border-sm">Shop Now 
                             <FaArrowRightLong/>
-                            </a>
+                            </Link>
                         </div>
                       </div>
                   </div>
@@ -82,7 +83,7 @@ const Featured = () => {
                       <div className="tp-featured-thumb include-bg" style={{background:'url(assets/img/product/slider/product-slider-1.jpg)'}}></div>
                       <div className="tp-featured-content">
                         <h3 className="tp-featured-title">
-                            <a href="product-details.html">Clothing <br/> Collection 2023</a>
+                            <a href="#">Clothing <br/> Collection 2023</a>
                         </h3>
                         <div className="tp-featured-price-wrapper">
                             <span className="tp-featured-price new-price">$102.00</span>
@@ -96,9 +97,9 @@ const Featured = () => {
                             <span><i className="fa-solid fa-star"></i></span>
                         </div>
                         <div className="tp-featured-btn">
-                            <a href="product-details.html" className="tp-btn tp-btn-border tp-btn-border-sm">Shop Now 
+                            <Link href="/" className="tp-btn tp-btn-border tp-btn-border-sm">Shop Now 
                             <FaArrowRightLong/>
-                            </a>
+                            </Link>
                         </div>
                       </div>
                   </div>
@@ -108,7 +109,7 @@ const Featured = () => {
                       <div className="tp-featured-thumb include-bg" style={{background:'url(assets/img/product/slider/product-slider-1.jpg)'}}></div>
                       <div className="tp-featured-content">
                         <h3 className="tp-featured-title">
-                            <a href="product-details.html">Clothing <br/> Collection 2023</a>
+                            <a href="#">Clothing <br/> Collection 2023</a>
                         </h3>
                         <div className="tp-featured-price-wrapper">
                             <span className="tp-featured-price new-price">$102.00</span>
@@ -122,9 +123,9 @@ const Featured = () => {
                             <span><i className="fa-solid fa-star"></i></span>
                         </div>
                         <div className="tp-featured-btn">
-                            <a href="product-details.html" className="tp-btn tp-btn-border tp-btn-border-sm">Shop Now 
+                            <Link href="/shopcat" className="tp-btn tp-btn-border tp-btn-border-sm">Shop Now 
                             <FaArrowRightLong/>
-                            </a>
+                            </Link>
                         </div>
                       </div>
                   </div>
@@ -134,7 +135,7 @@ const Featured = () => {
                       <div className="tp-featured-thumb include-bg" style={{background:'url(assets/img/product/slider/product-slider-1.jpg)'}}></div>
                       <div className="tp-featured-content">
                         <h3 className="tp-featured-title">
-                            <a href="product-details.html">Clothing <br/> Collection 2023</a>
+                            <a href="#">Clothing <br/> Collection 2023</a>
                         </h3>
                         <div className="tp-featured-price-wrapper">
                             <span className="tp-featured-price new-price">$102.00</span>
@@ -148,9 +149,9 @@ const Featured = () => {
                             <span><i className="fa-solid fa-star"></i></span>
                         </div>
                         <div className="tp-featured-btn">
-                            <a href="product-details.html" className="tp-btn tp-btn-border tp-btn-border-sm">Shop Now 
+                            <Link href="/shopcat" className="tp-btn tp-btn-border tp-btn-border-sm">Shop Now 
                             <FaArrowRightLong/>
-                            </a>
+                            </Link>
                         </div>
                       </div>
                   </div>

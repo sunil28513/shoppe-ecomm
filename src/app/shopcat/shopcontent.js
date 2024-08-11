@@ -127,7 +127,7 @@ const ShopContent = () => {
                                 <div className="tp-shop-widget-product">
                                     <div className="tp-shop-widget-product-item d-flex align-items-center">
                                         <div className="tp-shop-widget-product-thumb">
-                                            <a href="product-details.html">
+                                            <a href="#">
                                                 <img src="assets/img/product/shop/sm/shop-sm-1.jpg" alt="" />
                                             </a>
                                         </div>
@@ -155,7 +155,7 @@ const ShopContent = () => {
                                                 </div>
                                             </div>
                                             <h4 className="tp-shop-widget-product-title">
-                                                <a href="product-details.html">Smart watches wood...</a>
+                                                <a href="#">Smart watches wood...</a>
                                             </h4>
                                             <div className="tp-shop-widget-product-price-wrapper">
                                                 <span className="tp-shop-widget-product-price">$150.00</span>
@@ -168,7 +168,7 @@ const ShopContent = () => {
                                 <div className="tp-shop-widget-product">
                                     <div className="tp-shop-widget-product-item d-flex align-items-center">
                                         <div className="tp-shop-widget-product-thumb">
-                                            <a href="product-details.html">
+                                            <a href="#">
                                                 <img src="assets/img/product/shop/sm/shop-sm-1.jpg" alt="" />
                                             </a>
                                         </div>
@@ -196,7 +196,7 @@ const ShopContent = () => {
                                                 </div>
                                             </div>
                                             <h4 className="tp-shop-widget-product-title">
-                                                <a href="product-details.html">Smart watches wood...</a>
+                                                <a href="#">Smart watches wood...</a>
                                             </h4>
                                             <div className="tp-shop-widget-product-price-wrapper">
                                                 <span className="tp-shop-widget-product-price">$150.00</span>
@@ -295,28 +295,28 @@ const ShopContent = () => {
                             </div>                            
                         </div>
                         <div className="infinite-pagination d-none">
-                            <a href="shop.html" className="infinite-next-link">Next</a>
+                            <a href="#" className="infinite-next-link">Next</a>
                         </div>
                         <div className="tp-shop-pagination mt-20">
                             <div className="tp-pagination">
                                 <nav>
                                     <ul>
                                     <li>
-                                        <a href="shop.html" className="tp-pagination-prev prev page-numbers">
+                                        <a href="#" className="tp-pagination-prev prev page-numbers">
                                             <FaArrowLeft />
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="shop.html">1</a>
+                                        <a href="#">1</a>
                                     </li>
                                     <li>
                                         <span className="current">2</span>
                                     </li>
                                     <li>
-                                        <a href="shop.html">3</a>
+                                        <a href="#">3</a>
                                     </li>
                                     <li>
-                                        <a href="shop.html" className="next page-numbers">
+                                        <a href="#" className="next page-numbers">
                                             <FaArrowRight/>                                   
                                         </a>
                                     </li>

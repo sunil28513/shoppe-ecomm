@@ -51,7 +51,7 @@ const Trending = () => {
                                         <div className="tp-trending-item swiper-slide">
                                             <div className="tp-product-item-2">
                                             <div className="tp-product-thumb-2 p-relative z-index-1 fix w-img">
-                                                <a href="product-details.html">
+                                                <a href="#">
                                                     <img src="assets/img/product/trending/trending-1.jpg" alt="" />
                                                 </a>
                                                 <div className="tp-product-action-2 tp-product-action-blackStyle">
@@ -76,7 +76,7 @@ const Trending = () => {
                                                     <a href="#">Whitetails Store</a>
                                                 </div>
                                                 <h3 className="tp-product-title-2">
-                                                    <a href="product-details.html">Brown Gown for Women</a>
+                                                    <a href="#">Brown Gown for Women</a>
                                                 </h3>
                                                 <div className="tp-product-rating-icon tp-product-rating-icon-2">
                                                     <span><MdOutlineStar/></span>
@@ -97,7 +97,7 @@ const Trending = () => {
                                         <div className="tp-trending-item swiper-slide">
                                             <div className="tp-product-item-2">
                                             <div className="tp-product-thumb-2 p-relative z-index-1 fix w-img">
-                                                <a href="product-details.html">
+                                                <a href="#">
                                                     <img src="assets/img/product/trending/trending-1.jpg" alt="" />
                                                 </a>
                                                 <div className="tp-product-action-2 tp-product-action-blackStyle">
@@ -122,7 +122,7 @@ const Trending = () => {
                                                     <a href="#">Whitetails Store</a>
                                                 </div>
                                                 <h3 className="tp-product-title-2">
-                                                    <a href="product-details.html">Brown Gown for Women</a>
+                                                    <a href="#">Brown Gown for Women</a>
                                                 </h3>
                                                 <div className="tp-product-rating-icon tp-product-rating-icon-2">
                                                     <span><MdOutlineStar/></span>
@@ -143,7 +143,7 @@ const Trending = () => {
                                         <div className="tp-trending-item swiper-slide">
                                             <div className="tp-product-item-2">
                                             <div className="tp-product-thumb-2 p-relative z-index-1 fix w-img">
-                                                <a href="product-details.html">
+                                                <a href="#">
                                                     <img src="assets/img/product/trending/trending-1.jpg" alt="" />
                                                 </a>
                                                 <div className="tp-product-action-2 tp-product-action-blackStyle">
@@ -168,7 +168,7 @@ const Trending = () => {
                                                     <a href="#">Whitetails Store</a>
                                                 </div>
                                                 <h3 className="tp-product-title-2">
-                                                    <a href="product-details.html">Brown Gown for Women</a>
+                                                    <a href="#">Brown Gown for Women</a>
                                                 </h3>
                                                 <div className="tp-product-rating-icon tp-product-rating-icon-2">
                                                     <span><MdOutlineStar/></span>
@@ -197,10 +197,10 @@ const Trending = () => {
                         <div className="tp-trending-banner-thumb w-img include-bg" style={{background:'url(assets/img/product/trending/banner/trending-banner.jpg)'}}></div>
                         <div className="tp-trending-banner-content">
                            <h3 className="tp-trending-banner-title">
-                              <a href="shop.html">Short Sleeve Tunic <br/> Tops Casual Swing</a>
+                              <a href="#">Short Sleeve Tunic <br/> Tops Casual Swing</a>
                            </h3>
                            <div className="tp-trending-banner-btn">
-                              <a href="shop.html" className="tp-btn tp-btn-border tp-btn-border-white tp-btn-border-white-sm">
+                              <a href="#" className="tp-btn tp-btn-border tp-btn-border-white tp-btn-border-white-sm">
                                  Explore More
                                  <FaArrowRightLong/>
                               </a>
