@@ -3,7 +3,11 @@ import { FiSearch } from "react-icons/fi";
 import { FaRegHeart } from "react-icons/fa";
 import { BsHandbag } from "react-icons/bs";
 import { RiMenu3Line } from "react-icons/ri";
-
+import "swiper/css";
+import 'bootstrap/dist/css/bootstrap.min.css';
+import '../../../spacing.css'
+import '../../../main.css'
+import Link from 'next/link';
 
 export default function Header() {
     return (
@@ -16,7 +20,7 @@ export default function Header() {
                            <div className="row align-items-center">
                               <div className="col-xl-2 col-lg-5 col-md-5 col-sm-4 col-6">
                                  <div className="logo">
-                                    <a className='d-flex align-items-center gap-2' href="#">
+                                    <Link className='d-flex align-items-center gap-2' href="/">
                                        <Image 
                                              src="/assets/img/logo/logo.png" 
                                              alt="logo"
@@ -24,15 +28,15 @@ export default function Header() {
                                              height={45}
                                        /> 
                                        <span><strong>Aljeco</strong> </span>
-                                    </a>
+                                    </Link>
                                  </div>
                               </div>
                               <div className="col-xl-5 d-none d-xl-block">
                                  <div className="main-menu menu-style-2">
                                     <nav className="tp-main-menu-content">
                                        <ul>
-                                          <li><a href="#">Mens</a></li>
-                                          <li><a href="#">Womens</a></li>
+                                          <li><Link href="/shopcat">Mens</Link></li>
+                                          <li><Link href="/shopcat">Womens</Link></li>
                                        </ul>
                                     </nav>
                                  </div>

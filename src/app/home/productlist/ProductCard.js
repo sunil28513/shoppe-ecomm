@@ -1,5 +1,5 @@
 import React from 'react'
-import {CartIcon, EyeIcon, WishListIcon} from '../../../../SvgIcons'
+import {CartIcon, EyeIcon, WishListIcon} from '../../SvgIcons'
 import { MdOutlineStar, MdOutlineStarHalf  } from "react-icons/md";
 
 const ProductCard = ({product}) => {

@@ -1,14 +1,18 @@
 import { FaArrowRightLong } from "react-icons/fa6";
 import Banner from "./Banner";
-import Popular from "./Popular";
 import ProductList from "./productlist/ProductList";
-import Featured from './featured/featured'
+import Featured from "./featured/featured";
 import Trending from "./trendingarrivals/trending";
-import Testimonials from "../../testimonials/Testimonials";
+import Testimonials from "../testimonials/Testimonials";
+import Header from "../common/header/page";
+import Footer from "../common/footer/Footer";
+
 
 export default function HomePage() {
     return (
         <>
+              <Header/>
+
             <Banner/>
 
             <section className="tp-banner-area mt-20">
@@ -82,6 +86,9 @@ export default function HomePage() {
             <Trending/>
 
 <Testimonials/>
+
+<Footer/>
+
 
         </>
     )

@@ -6,7 +6,7 @@ import { Navigation, Pagination, Autoplay } from 'swiper/modules';
 import { MdOutlineStar, MdOutlineStarHalf  } from "react-icons/md";
 import { FaArrowRightLong } from "react-icons/fa6";
 
-import {CartIcon, EyeIcon, WishListIcon} from '../../../../SvgIcons'
+import {CartIcon, EyeIcon, WishListIcon} from '../../SvgIcons'
 
 const Trending = () => {
     const prevRef = useRef(null);

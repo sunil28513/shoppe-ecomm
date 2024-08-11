@@ -1,4 +1,5 @@
 import React from 'react'
+import Link from 'next/link';
 
 const BannerItem = () => {
   return (
@@ -14,7 +15,7 @@ const BannerItem = () => {
                         <span>New Arrivals 2024</span>
                         <h3 className="tp-slider-title-2">The Clothing Collection</h3>
                         <div className="tp-slider-btn-2">
-                        <a href="#" className="tp-btn tp-btn-border">Shop Collection</a>
+                        <Link href="/shopcat" className="tp-btn tp-btn-border">Shop Collection</Link>
                         </div>
                     </div>
                 </div>
