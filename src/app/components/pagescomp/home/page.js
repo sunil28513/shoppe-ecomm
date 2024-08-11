@@ -17,7 +17,7 @@ export default function HomePage() {
                         <div className="tp-banner-item-2 p-relative z-index-1 grey-bg-2 mb-20 fix">
                             <div className="tp-banner-thumb-2 include-bg transition-3" style={{background:'url(/assets/img/banner/2/banner-1.jpg) center'}}></div>
                             <h3 className="tp-banner-title-2">
-                            <a href="#">T-Shirt Tunic <br/> Tops Blouse</a>
+                            <a href="#">Top wear <br/> women</a>
                             </h3>
                             <div className="tp-banner-btn-2">
                             <a href="#" className="tp-btn tp-btn-border tp-btn-border-sm">Shop Now 
@@ -33,7 +33,7 @@ export default function HomePage() {
                         <div className="tp-banner-item-2 p-relative z-index-1 grey-bg-2 mb-20 fix">
                             <div className="tp-banner-thumb-2 include-bg transition-3" style={{background:'url(/assets/img/banner/2/banner-2.jpg) center'}}></div>
                             <h3 className="tp-banner-title-2">
-                            <a href="#">Satchel Tote <br/> Crossbody Bags</a>
+                            <a href="#">Top wear <br/> men</a>
                             </h3>
                             <div className="tp-banner-btn-2">
                             <a href="#" className="tp-btn tp-btn-border tp-btn-border-sm">Shop Now 
