@@ -108,13 +108,10 @@ const ProductList = () => {
                                         <Nav.Link eventKey="all">All Collection</Nav.Link>
                                     </Nav.Item>
                                     <Nav.Item>
-                                        <Nav.Link eventKey="shoes">Shoes</Nav.Link>
+                                        <Nav.Link eventKey="mens">Mens wear</Nav.Link>
                                     </Nav.Item>
                                     <Nav.Item>
-                                        <Nav.Link eventKey="clothing">Clothing</Nav.Link>
-                                    </Nav.Item>
-                                    <Nav.Item>
-                                        <Nav.Link eventKey="bags">Bags</Nav.Link>
+                                        <Nav.Link eventKey="womens">Womens wear</Nav.Link>
                                     </Nav.Item>
                                 </Nav>
                             </div>
@@ -133,9 +130,8 @@ const ProductList = () => {
                                         ))}
                                     </div>
                                 </Tab.Pane>
-                                <Tab.Pane eventKey="shoes">Second tab content</Tab.Pane>
-                                <Tab.Pane eventKey="clothing">Second tab content</Tab.Pane>
-                                <Tab.Pane eventKey="bags">Second tab content</Tab.Pane>
+                                <Tab.Pane eventKey="mens">Mens</Tab.Pane>
+                                <Tab.Pane eventKey="womens">Womens</Tab.Pane>
                             </Tab.Content>
                         </div>
                    </div>

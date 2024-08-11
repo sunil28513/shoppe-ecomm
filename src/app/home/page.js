@@ -85,9 +85,9 @@ export default function HomePage() {
 
             <Trending/>
 
-<Testimonials/>
+            <Testimonials/>
 
-<Footer/>
+            <Footer/>
 
 
         </>
