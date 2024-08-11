@@ -1,3 +1,4 @@
+"use client"
 import React, { useRef, useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import 'swiper/css/navigation';
@@ -24,7 +25,7 @@ const Testimonials = () => {
                            <div class="col-xl-8 col-lg-8 col-md-10">
                               <div class="tp-testimonial-slider-active swiper-container">
                                  <div class="swiper-wrapper">
-                                    {/* <Swiper 
+                                    <Swiper 
                                             className="mySwiper"
                                             spaceBetween={10}
                                             slidesPerView={1}
@@ -116,7 +117,7 @@ const Testimonials = () => {
                                                     </div>
                                                 </div>
                                             </SwiperSlide>
-                                    </Swiper> */}
+                                    </Swiper>
                                  </div>
                               </div>
                            </div>
