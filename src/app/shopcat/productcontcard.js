@@ -1,16 +1,22 @@
 import React from 'react'
 import Link from 'next/link';
 import { BsCartDash, BsEye, BsHeart   } from "react-icons/bs";
-import { MdOutlineStar, MdOutlineStarHalf  } from "react-icons/md";
+import { MdOutlineStar, MdOutlineStarHalf, MdOutlineStarOutline } from "react-icons/md";
 
 const ProductContCard = ({product }) => {
+
+    const { rate } = product.rating;
+
+    // Calculate the number of full stars, half stars, and empty stars
+    const fullStars = Math.floor(rate);
+    const halfStars = rate % 1 >= 0.5 ? 1 : 0;
+    const emptyStars = 5 - fullStars - halfStars;
   return (
     <>
-        <div className="col-xl-4 col-md-6 col-sm-6 col-6 infinite-item">
-            <div className="tp-product-item-2 mb-40">
+            <div className="tp-product-item-2">
                 <div className="tp-product-thumb-2 p-relative z-index-1 fix w-img">
-                    <Link href="#">
-                        <img src={product.thumb} alt={product.title} />
+                    <Link href={`/product-details/${product.id}`}>
+                        <img src={product.image} alt={product.title} />
                     </Link>
                     <div className="tp-product-action-2 tp-product-action-blackStyle">
                         <div className="tp-product-action-item-2 d-flex flex-column">
@@ -31,29 +37,32 @@ const ProductContCard = ({product }) => {
                 </div>
                 <div className="tp-product-content-2 pt-15">
                     <div className="tp-product-tag-2">
-                        <Link href="#">
-                           {product.store}
+                        <Link href={`/product-details/${product.id}`}>
+                           {product.category}
                         </Link>
                     </div>
                     <h3 className="tp-product-title-2">
-                        <Link href="#">
+                        <Link href={`/product-details/${product.id}`}>
                             {product.title}
                         </Link>
                     </h3>
                     <div className="tp-product-rating-icon tp-product-rating-icon-2">
-                        <span> <MdOutlineStar/>  </span>
+                        {/* <span> <MdOutlineStar/>  </span>
                         <span> <MdOutlineStar/>   </span>
                         <span> <MdOutlineStar/> </span>
                         <span> <MdOutlineStar/>  </span>
-                        <span> <MdOutlineStarHalf /> </span>
+                        <span> <MdOutlineStarHalf /> </span> */}
+                        <span title={`Product Rating : ${rate}`}>
+                            {Array(fullStars).fill(<MdOutlineStar />)}
+                            {halfStars === 1 && <MdOutlineStarHalf />}
+                            {Array(emptyStars).fill(<MdOutlineStarOutline />)}
+                        </span>
                     </div>
                     <div className="tp-product-price-wrapper-2">
-                        <span className="tp-product-price-2 new-price">${product.newPrice}</span>
-                        <span className="tp-product-price-2 old-price">${product.oldPrice}</span>
+                        <span className="tp-product-price-2 new-price">${product.price}</span>
                     </div>
                 </div>
             </div>
-        </div>
     </>
   )
 }

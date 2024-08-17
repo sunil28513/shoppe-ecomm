@@ -1,85 +1,46 @@
-"use-client"
-import React from 'react'
+"use client";
+
+import React, { useEffect, useState } from 'react';
 import { FaArrowLeft, FaArrowRight } from "react-icons/fa6";
 import ProductContCard from './productcontcard';
 import { MdOutlineStar } from 'react-icons/md';
 
 const ShopContent = () => {
-    const products = [
-        {
-          id: '1',
-          title: 'Whitetails Women Open Sky',
-          thumb:'/assets/img/product/2/prodcut-1.jpg',
-          store: 'Whitetails Store',
-          rating: 5,
-          newPrice: '340.00',
-          oldPrice: '475.00'
-        },
-        {
-          id: '2',
-          title: 'Whitetails Women Open Sky',
-          thumb:'/assets/img/product/2/prodcut-2.jpg',
-          store: 'Whitetails Store',
-          rating: 5,
-          newPrice: '340.00',
-          oldPrice: '475.00'
-        },
-        {
-          id: '3',
-          title: 'Whitetails Women Open Sky',
-          thumb:'/assets/img/product/2/prodcut-3.jpg',
-          store: 'Whitetails Store',
-          rating: 5,
-          newPrice: '340.00',
-          oldPrice: '475.00'
-        },
-        {
-          id: '4',
-          title: 'Whitetails Women Open Sky',
-          thumb:'/assets/img/product/2/prodcut-4.jpg',
-          store: 'Whitetails Store',
-          rating: 5,
-          newPrice: '340.00',
-          oldPrice: '475.00'
-        },
-        {
-          id: '5',
-          title: 'Whitetails Women Open Sky',
-          thumb:'/assets/img/product/2/prodcut-5.jpg',
-          store: 'Whitetails Store',
-          rating: 5,
-          newPrice: '340.00',
-          oldPrice: '475.00'
-        },
-        {
-          id: '6',
-          title: 'Whitetails Women Open Sky',
-          thumb:'/assets/img/product/2/prodcut-6.jpg',
-          store: 'Whitetails Store',
-          rating: 5,
-          newPrice: '340.00',
-          oldPrice: '475.00'
-        },
-        {
-          id: '7',
-          title: 'Whitetails Women Open Sky',
-          thumb:'/assets/img/product/2/prodcut-7.jpg',
-          store: 'Whitetails Store',
-          rating: 5,
-          newPrice: '340.00',
-          oldPrice: '475.00'
-        },
-        {
-          id: '8',
-          title: 'Whitetails Women Open Sky',
-          thumb:'/assets/img/product/2/prodcut-8.jpg',
-          store: 'Whitetails Store',
-          rating: 5,
-          newPrice: '340.00',
-          oldPrice: '475.00'
-        },
-        
-      ];
+
+    const [products, setProducts] = useState([]);
+    const [categories, setCategories] = useState([]);
+
+  useEffect(() => {
+    // Fetch products from the API
+    const fetchProducts = async () => {
+      try {
+        const response = await fetch('https://fakestoreapi.com/products');
+        const data = await response.json();
+        setProducts(data);
+
+
+        // Calculate category counts
+        const categoryCounts = data.reduce((acc, product) => {
+            acc[product.category] = (acc[product.category] || 0) + 1;
+            return acc;
+        }, {});
+
+        // Create an array of categories with their counts
+        const categoryArray = Object.keys(categoryCounts).map(category => ({
+            name: category,
+            count: categoryCounts[category]
+        }));
+
+         // Set categories
+         setCategories(categoryArray);
+
+
+      } catch (error) {
+        console.error('Error fetching the products:', error);
+      }
+    };
+    fetchProducts();
+  }, []);
 
   return (
     <>
@@ -111,11 +72,11 @@ const ShopContent = () => {
                             <div className="tp-shop-widget-content">
                                 <div className="tp-shop-widget-categories">
                                     <ul>
-                                        <li><a href="#">Mens <span>100</span></a></li>
-                                        <li><a href="#">Womens <span>50</span></a></li>
-                                        <li><a href="#">Latest <span>22</span></a></li>
-                                        <li><a href="#">Featured <span>17</span></a></li>
-                                        <li><a href="#">Trending <span>22</span></a></li>
+                                        {categories.map((category) => (
+                                            <li key={category.name} className="infinite-item mb-25">
+                                                <a href="#">{category.name} <span>{category.count}</span></a>
+                                            </li>
+                                        ))}
                                     </ul>
                                 </div>
                             </div>
@@ -288,7 +249,11 @@ const ShopContent = () => {
                                 <div className="tab-pane fade show active">
                                     <div className="row infinite-container">
                                         {products.map(product => (
-                                            <ProductContCard key={product.id} product={product} />
+                                            <div key={product.id} className="col-xl-4 col-md-6 col-sm-6 col-6 infinite-item mb-25">
+                                                <div  className="product-list">
+                                                    <ProductContCard product={product} />
+                                                </div>
+                                            </div>
                                         ))}
                                     </div>
                                 </div>
