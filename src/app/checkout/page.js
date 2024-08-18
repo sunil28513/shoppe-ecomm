@@ -172,7 +172,7 @@ const page = () => {
                            </div>
                            <div className="tp-checkout-payment-item paypal-payment">
                               <input type="radio" id="paypal" name="payment" />
-                              <label for="paypal">UPI <a href="#">What is PayPal?</a></label>
+                              <label for="paypal">UPI</label>
                            </div>
                         </div>
                         <div className="tp-checkout-agree">

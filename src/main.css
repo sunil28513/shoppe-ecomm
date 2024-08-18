@@ -10246,9 +10246,9 @@ div.tp-blog-thumb img {
 }
 .tp-slider-2-shape-1 {
   position: absolute;
-  top: 0;
+  top: 60px;
   right: 10%;
-  z-index: -1;
+  z-index: 0;
   mix-blend-mode: luminosity;
 }
 .tp-slider-title-2 {

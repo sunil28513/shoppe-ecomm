@@ -6,7 +6,7 @@ const BannerItem = () => {
     <>
         <div className="tp-slider-item-2 tp-slider-height-2 p-relative swiper-slide grey-bg-5 d-flex align-items-end">
             <div className="tp-slider-2-shape">
-            <img className="tp-slider-2-shape-1" src="/assets/img/slider/2/shape/shape-1.png" alt="" />
+                <img className="tp-slider-2-shape-1" src="/assets/img/slider/2/shape/shape-1.png" alt="" />
             </div>
             <div className="container">
             <div className="row align-items-center">
