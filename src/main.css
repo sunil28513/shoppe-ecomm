@@ -1181,7 +1181,7 @@ div.demo img {
   color: var(--tp-common-white);
 }
 .tp-btn-border-sm {
-  padding: 5px 25px;
+  padding: 5px 15px;
 }
 .tp-btn-border-white {
   border-color: rgba(255, 255, 255, 0.3);
@@ -14957,8 +14957,8 @@ div.tp-author-info-avater img {
 }
 
 .tp-banner-item-2 {
-  min-height: 280px;
-  padding: 65px 48px 55px;
+  min-height: 180px;
+  padding: 35px 20px 20px;
 }
 @media only screen and (min-width: 1200px) and (max-width: 1399px), only screen and (min-width: 992px) and (max-width: 1199px) {
   .tp-banner-item-2 {
@@ -14988,7 +14988,7 @@ div.tp-author-info-avater img {
 }
 .tp-banner-title-2 {
   font-weight: 400;
-  font-size: 36px;
+  font-size: 20px;
   line-height: 1.17;
   margin-bottom: 20px;
 }

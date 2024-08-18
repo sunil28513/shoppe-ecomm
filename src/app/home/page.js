@@ -18,7 +18,7 @@ export default function HomePage() {
             <section className="tp-banner-area mt-20">
                 <div className="container-fluid tp-gx-40">
                 <div className="row tp-gx-20">
-                    <div className="col-xxl-4 col-lg-6 col-6">
+                    <div className="col-xxl-3 col-lg-6 col-6">
                         <div className="tp-banner-item-2 p-relative z-index-1 grey-bg-2 mb-20 fix">
                             <div className="tp-banner-thumb-2 include-bg transition-3" style={{background:'url(/assets/img/banner/2/banner-1.jpg) center'}}></div>
                             <h3 className="tp-banner-title-2">
@@ -32,7 +32,7 @@ export default function HomePage() {
                             </div>
                         </div>
                     </div>
-                    <div className="col-xxl-4 col-lg-6 col-6">
+                    <div className="col-xxl-3 col-lg-6 col-6">
                         <div className="tp-banner-item-2 p-relative z-index-1 grey-bg-2 mb-20 fix">
                             <div className="tp-banner-thumb-2 include-bg transition-3" style={{background:'url(/assets/img/banner/2/banner-2.jpg) center'}}></div>
                             <h3 className="tp-banner-title-2">
@@ -46,7 +46,7 @@ export default function HomePage() {
                             </div>
                         </div>
                     </div>
-                    <div className="col-xxl-4 col-lg-6 col-6">
+                    <div className="col-xxl-3 col-lg-6 col-6">
                         <div className="tp-banner-item-2 p-relative z-index-1 grey-bg-2 mb-20 fix">
                             <div className="tp-banner-thumb-2 include-bg transition-3" style={{background:'url(/assets/img/banner/2/banner-3.jpg) center'}}></div>
                             <h3 className="tp-banner-title-2">
@@ -60,7 +60,7 @@ export default function HomePage() {
                             </div>
                         </div>
                     </div>
-                    <div className="col-xxl-4 col-lg-6 col-6 d-block d-md-none">
+                    <div className="col-xxl-3 col-lg-6 col-6">
                         <div className="tp-banner-item-2 p-relative z-index-1 grey-bg-2 mb-20 fix">
                             <div className="tp-banner-thumb-2 include-bg transition-3" style={{background:'url(/assets/img/banner/2/banner-3.jpg) center'}}></div>
                             <h3 className="tp-banner-title-2">
