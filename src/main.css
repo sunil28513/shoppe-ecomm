@@ -10296,11 +10296,11 @@ div.tp-blog-thumb img {
   top: 14%;
   right: -7%;
   display: inline-block;
-  width: 550px;
-  height: 550px;
+  width: 370px;
+  height: 370px;
   border-radius: 50%;
   background-color: rgba(41, 194, 227, 0.3);
-  z-index: -1;
+  z-index: 1;
 }
 .tp-slider-thumb-2-shape-1 {
   position: absolute;
@@ -21901,7 +21901,9 @@ product all slider
   background: #fff;
 }
 .tp-slider-thumb-2 img{
-  max-height: 450px;
+  max-height: 460px;
+  position: relative;
+  z-index: 1;
 }
 
 @import url(./responsive.css);
