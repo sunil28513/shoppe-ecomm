@@ -3,7 +3,7 @@ import { FiSearch } from "react-icons/fi";
 import { FaRegHeart, FaRegUser   } from "react-icons/fa";
 import { BsHandbag } from "react-icons/bs";
 import { RiMenu3Line } from "react-icons/ri";
-import { MdOutlineHome } from "react-icons/md";
+import { MdLogin, MdOutlineHome } from "react-icons/md";
 
 import "swiper/css";
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -113,6 +113,11 @@ export default function Header() {
                                              <BsHandbag/>   
                                              <span className="tp-header-action-badge">13</span>                                                                          
                                           </button>
+                                       </div>
+                                       <div className="tp-header-action-item ps-4">
+                                          <Link href={`/authentication/login`} className="d-flex align-items-center btn btn-sm btn-primary" >
+                                            <MdLogin/> <span className='ps-1'>Login</span>                                                                      
+                                          </Link>
                                        </div>
                                        <div className="d-none d-sm-block tp-header-action-item tp-header-hamburger mr-20 d-xl-none">
                                           <button type="button" className="tp-offcanvas-open-btn">

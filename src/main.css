@@ -257,7 +257,7 @@ li,
   --tp-text-5: #888A8C;
   --tp-text-6: #90969B;
   --tp-theme-primary: #0989FF;
-  --tp-theme-secondary: #eb0e42;
+  --tp-theme-secondary: #004BFE;
   --tp-theme-brown: #BD844C;
   --tp-theme-green: #678E61;
   --tp-footer-grey-1: #F4F7F9;
@@ -10253,7 +10253,7 @@ div.tp-blog-thumb img {
 }
 .tp-slider-title-2 {
   font-weight: 400;
-  font-size: 100px;
+  font-size: 70px;
   line-height: 1.06;
   margin-bottom: 30px;
   animation-delay: 0.3s;
@@ -10289,7 +10289,7 @@ div.tp-blog-thumb img {
   animation-duration: 1s;
 }
 .tp-slider-height-2 {
-  min-height: 790px;
+  min-height: 550px;
 }
 .tp-slider-thumb-2-gradient {
   position: absolute;
@@ -12556,13 +12556,17 @@ div.tp-blog-thumb img {
   background-color: var(--tp-theme-primary);
   color: var(--tp-common-white);
 }
-.tp-login-shape-1, .tp-login-shape-2, .tp-login-shape-3, .tp-login-shape-4 {
+.tp-login-shape-1, .tp-login-shape-2, .tp-login-shape-3, .tp-login-shape-4, .tp-login-shape-5, .tp-login-shape-6 {
   position: absolute;
   z-index: -1;
 }
 .tp-login-shape-1 {
-  top: 7%;
+  top: 15%;
   left: 18%;
+}
+.tp-login-shape-5, .tp-login-shape-5 {
+  top: 0%;
+  left: 0%;
 }
 @media only screen and (min-width: 1200px) and (max-width: 1399px) {
   .tp-login-shape-1 {
@@ -21890,13 +21894,14 @@ product all slider
 
 .tp-header-bottom-2 {
   box-shadow: 0px 0px 12px 1px #0000001a;
-
   position: fixed;
   top: 0px;
   width: 100%;
   z-index: 99999999999;
   background: #fff;
-
+}
+.tp-slider-thumb-2 img{
+  max-height: 450px;
 }
 
 @import url(./responsive.css);
