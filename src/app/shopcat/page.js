@@ -9,7 +9,7 @@ export default function Page() {
   return (
     <>
     <Header/>
-        <section className="breadcrumb__area include-bg pt-60 pb-50">
+        <section className="breadcrumb__area include-bg pt-100 pb-30">
             <div className="container">
                <div className="row">
                   <div className="col-xxl-12">

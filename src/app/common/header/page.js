@@ -93,7 +93,7 @@ export default function Header() {
                               </div>
                               <div className="col-xl-5 col-lg-7 col-md-7 col-sm-8 col-6">
                                  <div className="tp-header-bottom-right d-flex align-items-center justify-content-end gap-4 pl-20 pe-2">
-                                    <div className="tp-header-search-2">
+                                    <div className="tp-header-search-2 d-none d-md-block">
                                        <form action="#">
                                           <input type="text" placeholder="Search Products..." />
                                           <button className='d-none d-sm-block' type="submit">
@@ -114,9 +114,9 @@ export default function Header() {
                                              <span className="tp-header-action-badge">13</span>                                                                          
                                           </button>
                                        </div>
-                                       <div className="tp-header-action-item ps-4">
+                                       <div className="tp-header-action-item ps-md-4">
                                           <Link href={`/authentication/login`} className="d-flex align-items-center btn btn-sm btn-primary" >
-                                            <MdLogin/> <span className='ps-1'>Login</span>                                                                      
+                                            <MdLogin style={{fontSize:'18px'}}/> <span className='ps-1 d-none d-md-block'>Login</span>                                                                      
                                           </Link>
                                        </div>
                                        <div className="d-none d-sm-block tp-header-action-item tp-header-hamburger mr-20 d-xl-none">

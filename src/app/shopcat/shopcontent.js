@@ -74,7 +74,10 @@ const ShopContent = () => {
                                     <ul>
                                         {categories.map((category) => (
                                             <li key={category.name} className="infinite-item mb-25">
-                                                <a href="#">{category.name} <span>{category.count}</span></a>
+                                                <label className='d-flex align-items-center gap-1 '>
+                                                    <input type="checkbox" value={category.name} />
+                                                     <span className='d-flex justify-content-between w-100'>{category.name} <span>{category.count}</span></span>
+                                                </label>
                                             </li>
                                         ))}
                                     </ul>
