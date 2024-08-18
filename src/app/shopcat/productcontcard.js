@@ -15,7 +15,8 @@ const ProductContCard = ({product }) => {
     <>
             <div className="tp-product-item-2">
                 <div className="tp-product-thumb-2 p-relative z-index-1 fix w-img">
-                    <Link href={`/product-details/${product.id}`}>
+                    {/* <Link href={`/product-details/${product.id}`}> */}
+                    <Link href={`/product-details`}>
                         <img src={product.image} alt={product.title} />
                     </Link>
                     <div className="tp-product-action-2 tp-product-action-blackStyle">
@@ -37,12 +38,14 @@ const ProductContCard = ({product }) => {
                 </div>
                 <div className="tp-product-content-2 pt-15">
                     <div className="tp-product-tag-2">
-                        <Link href={`/product-details/${product.id}`}>
+                        {/* <Link href={`/product-details/${product.id}`}> */}
+                        <Link href={`/product-details`}>
                            {product.category}
                         </Link>
                     </div>
                     <h3 className="tp-product-title-2">
-                        <Link href={`/product-details/${product.id}`}>
+                        {/* <Link href={`/product-details/${product.id}`}> */}
+                        <Link href={`/product-details`}>
                             {product.title}
                         </Link>
                     </h3>

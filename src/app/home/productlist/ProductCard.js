@@ -1,6 +1,7 @@
 import React from 'react';
 import { CartIcon, EyeIcon, WishListIcon } from '../../SvgIcons';
 import { MdOutlineStar, MdOutlineStarHalf, MdOutlineStarOutline } from "react-icons/md";
+import Link from 'next/link';
 
 const ProductCard = ({ product }) => {
 
@@ -15,9 +16,10 @@ const ProductCard = ({ product }) => {
     <>
       <div className="tp-product-item-2">
         <div className="tp-product-thumb-2 p-relative z-index-1 fix w-img">
-          <a href={`/product-details/${product.id}`}>
-            <img src={product.image} alt={product.title} />
-          </a>
+          {/* <Link href={`/product-details/${product.id}`}> */}
+          <Link href={`/product-details`}>
+              <img src={product.image} alt={product.title} />
+          </Link>
           <div className="tp-product-action-2 tp-product-action-blackStyle">
             <div className="tp-product-action-item-2 d-flex flex-column">
               <button type="button" className="tp-product-action-btn-2 tp-product-add-cart-btn">
@@ -40,7 +42,10 @@ const ProductCard = ({ product }) => {
             <a href="#">{product.category}</a>
           </div>
           <h3 className="tp-product-title-2">
-            <a href={`/product-details/${product.id}`}>{product.title}</a>
+            {/* <Link href={`/product-details/${product.id}`}> */}
+            <Link href={`/product-details`}>
+              {product.title}
+            </Link>
           </h3>
           <div className="tp-product-rating-icon tp-product-rating-icon-2">
             <span title={`Product Rating : ${rate}`}>

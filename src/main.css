@@ -19504,7 +19504,7 @@ product all slider
   border-color: var(--tp-common-black);
 }
 .tp-checkout-input textarea {
-  height: 200px;
+  height: 120px;
   resize: none;
 }
 .tp-checkout-input .nice-select {
@@ -21886,6 +21886,17 @@ product all slider
   padding: 15px;
   border: 1px solid #ccc;
   height: 100%
+}
+
+.tp-header-bottom-2 {
+  box-shadow: 0px 0px 12px 1px #0000001a;
+
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  z-index: 99999999999;
+  background: #fff;
+
 }
 
 @import url(./responsive.css);

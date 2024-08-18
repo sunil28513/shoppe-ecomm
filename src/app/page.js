@@ -8,6 +8,7 @@ import Footer from "./common/footer/Footer";
 export default function Home() {
   return (
     <main>
+    
       <HomePage/>
     </main>
   );
