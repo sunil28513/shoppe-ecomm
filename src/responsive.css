@@ -1,3 +1,7 @@
+.offcanvas-body .nav{
+    padding-left: 2rem;
+}
+
 @media (max-width:767px){
     .tp-header-search-2 input {
         height: 45px !important;

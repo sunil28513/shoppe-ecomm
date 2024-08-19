@@ -7704,7 +7704,7 @@ body .ui-tooltip {
   bottom: 0;
 }
 .tp-mobile-item-btn {
-  font-size: 28px;
+  font-size: 20px;
   text-align: center;
 }
 .tp-mobile-item-btn span {
@@ -21897,13 +21897,17 @@ product all slider
   position: fixed;
   top: 0px;
   width: 100%;
-  z-index: 99999999999;
+  z-index: 9;
   background: #fff;
 }
 .tp-slider-thumb-2 img{
   max-height: 460px;
   position: relative;
   z-index: 1;
+}
+
+.offcanvas.offcanvas-start {
+  z-index: 9999;
 }
 
 @import url(./responsive.css);

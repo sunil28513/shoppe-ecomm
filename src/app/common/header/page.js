@@ -1,3 +1,4 @@
+"use client"
 import Image from 'next/image'
 import { FiSearch } from "react-icons/fi";
 import { FaRegHeart, FaRegUser   } from "react-icons/fa";
@@ -10,20 +11,23 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import '../../../spacing.css'
 import '../../../main.css'
 import Link from 'next/link';
+import MobileMenus from './mobilemenus';
+import MobileSearch from './mobilesearch';
 
 export default function Header() {
+
+
     return (
         <>
-
             <div id="tp-bottom-menu-sticky" className="tp-mobile-menu d-lg-none">
                <div className="container">
                   <div className="row">
                      <div className="col">
                         <div className="tp-mobile-item text-center">
-                           <a href="#" className="tp-mobile-item-btn">
+                           <Link href="/" className="tp-mobile-item-btn">
                               <MdOutlineHome/>
                               <span>Home</span>
-                           </a>
+                           </Link>
                         </div>
                      </div>
                      <div className="col">
@@ -35,12 +39,7 @@ export default function Header() {
                         </div>
                      </div>
                      <div className="col">
-                        <div className="tp-mobile-item text-center">
-                           <a href="#" className="tp-mobile-item-btn">
-                              <FiSearch/>
-                              <span>Search</span>
-                           </a>
-                        </div>
+                        <MobileSearch/>
                      </div>
                      <div className="col">
                         <div className="tp-mobile-item text-center">
@@ -51,12 +50,7 @@ export default function Header() {
                         </div>
                      </div>
                      <div className="col">
-                        <div className="tp-mobile-item text-center">
-                           <button className="tp-mobile-item-btn tp-offcanvas-open-btn">
-                              <RiMenu3Line/>
-                              <span>Menu</span>
-                           </button>
-                        </div>
+                         <MobileMenus/>
                      </div>
                   </div>
                </div>
