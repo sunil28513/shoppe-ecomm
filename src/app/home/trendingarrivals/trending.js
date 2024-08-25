@@ -82,7 +82,7 @@ const Trending = () => {
                                         <h3 className="tp-section-title-2">Trending Arrivals</h3>
                                     </div>
                                     <div className="col-md-6">
-                                        <Nav className="justify-content-end" variant="pills">
+                                        <Nav className="justify-content-end gap-2" variant="pills">
                                             <Nav.Item>
                                             <Nav.Link eventKey="men">Men</Nav.Link>
                                             </Nav.Item>
@@ -255,22 +255,6 @@ const Trending = () => {
                         </div>
                      </Tab.Container>
                   </div>
-                  {/* <div className="col-xl-4 col-lg-5 col-md-8 col-sm-10">
-                     <div className="tp-trending-banner p-relative ml-35">
-                        <div className="tp-trending-banner-thumb w-img include-bg" style={{background:'url(assets/img/product/trending/banner/trending-banner.jpg)'}}></div>
-                        <div className="tp-trending-banner-content">
-                           <h3 className="tp-trending-banner-title">
-                              <a href="#">Short Sleeve Tunic <br/> Tops Casual Swing</a>
-                           </h3>
-                           <div className="tp-trending-banner-btn">
-                              <a href="#" className="tp-btn tp-btn-border tp-btn-border-white tp-btn-border-white-sm">
-                                 Explore More
-                                 <FaArrowRightLong/>
-                              </a>
-                           </div>
-                        </div>
-                     </div>
-                  </div> */}
                </div>
             </div>
          </section>

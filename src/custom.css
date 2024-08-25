@@ -44,3 +44,6 @@
 .nav-pills .nav-link:hover{
     background-color: var(--tp-theme-secondary);
 }
+.filter-items{
+    list-style-type: none;
+}

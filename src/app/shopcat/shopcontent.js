@@ -89,7 +89,7 @@ const ShopContent = () => {
                                                         </div>
                                                     </div>
                                                     <div className="col-xl-6">
-                                                        <div className="tp-shop-top-right d-sm-flex align-items-center justify-content-xl-end">
+                                                        <div className="tp-shop-top-right d-flex align-items-center justify-content-between justify-content-md-end ">
                                                             <div className="tp-shop-top-select">
                                                                 <select className='form-control'>
                                                                     <option >Default Sorting</option>
