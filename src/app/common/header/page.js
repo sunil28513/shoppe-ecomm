@@ -10,6 +10,7 @@ import "swiper/css";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../../../spacing.css'
 import '../../../main.css'
+import '../../../custom.css'
 import Link from 'next/link';
 import MobileMenus from './mobilemenus';
 import MobileSearch from './mobilesearch';
@@ -75,7 +76,7 @@ export default function Header() {
                                     </Link>
                                  </div>
                               </div>
-                              <div className="col-xl-5 d-none d-xl-block">
+                              <div className="col-xl-4 d-none d-xl-block">
                                  <div className="main-menu menu-style-2">
                                     <nav className="tp-main-menu-content">
                                        <ul>
@@ -85,8 +86,8 @@ export default function Header() {
                                     </nav>
                                  </div>
                               </div>
-                              <div className="col-xl-5 col-lg-7 col-md-7 col-sm-8 col-6">
-                                 <div className="tp-header-bottom-right d-flex align-items-center justify-content-end gap-4 pl-20 pe-2">
+                              <div className="col-xl-6 col-lg-7 col-md-7 col-sm-8 col-6">
+                                 <div className="tp-header-bottom-right d-flex align-items-center justify-content-end gap-2 pl-20 pe-2">
                                     <div className="tp-header-search-2 d-none d-md-block">
                                        <form action="#">
                                           <input type="text" placeholder="Search Products..." />
@@ -95,7 +96,7 @@ export default function Header() {
                                           </button>
                                        </form>
                                     </div>
-                                    <div className="tp-header-action d-flex align-items-center ml-20">
+                                    <div className="tp-header-action d-flex align-items-center gap-xl-3 ms-xl-5">
                                        <div className="tp-header-action-item d-none d-lg-block">
                                           <a href="#" className="tp-header-action-btn">
                                           <FaRegHeart/>
@@ -108,15 +109,10 @@ export default function Header() {
                                              <span className="tp-header-action-badge">13</span>                                                                          
                                           </button>
                                        </div>
-                                       <div className="tp-header-action-item ps-md-4">
-                                          <Link href={`/authentication/login`} className="d-flex align-items-center btn btn-sm btn-primary" >
+                                       <div className="tp-header-action-item">
+                                          <Link href={`/authentication/login`} className="d-flex align-items-center btn btn-primary" >
                                             <MdLogin style={{fontSize:'18px'}}/> <span className='ps-1 d-none d-md-block'>Login</span>                                                                      
                                           </Link>
-                                       </div>
-                                       <div className="d-none d-sm-block tp-header-action-item tp-header-hamburger mr-20 d-xl-none">
-                                          <button type="button" className="tp-offcanvas-open-btn">
-                                             <RiMenu3Line/>
-                                          </button>
                                        </div>
                                     </div>
                                  </div>
