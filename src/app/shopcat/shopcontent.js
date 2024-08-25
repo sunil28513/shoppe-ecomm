@@ -99,7 +99,7 @@ const ShopContent = () => {
                                                                     <option >On Sale</option>
                                                                 </select>
                                                             </div>
-                                                            <div class="tp-shop-top-filter">
+                                                            <div class="d-block d-md-none tp-shop-top-filter">
                                                                 <button onClick={handleShow} type="button" class="tp-filter-btn filter-open-btn">
                                                                     <span>
                                                                         <MdOutlineFilterAlt/>
@@ -165,7 +165,6 @@ const ShopContent = () => {
                             </Tab.Pane>
                             <Tab.Pane eventKey="newin">
                                 <h2>New In</h2>
-                                
                             </Tab.Pane>
                         </Tab.Content>
                 </Tab.Container>
