@@ -165,6 +165,7 @@ const ShopContent = () => {
                             </Tab.Pane>
                             <Tab.Pane eventKey="newin">
                                 <h2>New In</h2>
+                                
                             </Tab.Pane>
                         </Tab.Content>
                 </Tab.Container>
