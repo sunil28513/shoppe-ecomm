@@ -1,15 +1,11 @@
 "use client";
-
 import React, { useEffect, useState } from 'react';
 import { FaArrowLeft, FaArrowRight } from "react-icons/fa6";
 import Offcanvas from 'react-bootstrap/Offcanvas';
 import ProductContCard from './productcontcard';
 import { MdOutlineFilterAlt, MdOutlineStar } from 'react-icons/md';
 import Filter from './filter';
-
-import Col from 'react-bootstrap/Col';
 import Nav from 'react-bootstrap/Nav';
-import Row from 'react-bootstrap/Row';
 import Tab from 'react-bootstrap/Tab';
 
 const ShopContent = () => {

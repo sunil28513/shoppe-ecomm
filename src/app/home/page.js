@@ -7,7 +7,6 @@ import Testimonials from "../testimonials/Testimonials";
 import Header from "../common/header/page";
 import Footer from "../common/footer/Footer";
 import Link from "next/link";
-import ReactPlayer from 'react-player/youtube'
 
 
 export default function HomePage() {

@@ -4,18 +4,17 @@ import { BsCartDash, BsEye, BsHeart   } from "react-icons/bs";
 import { MdOutlineStar, MdOutlineStarHalf, MdOutlineStarOutline } from "react-icons/md";
 
 const ProductContCard = ({product }) => {
-
     const { rate } = product.rating;
-
     // Calculate the number of full stars, half stars, and empty stars
     const fullStars = Math.floor(rate);
     const halfStars = rate % 1 >= 0.5 ? 1 : 0;
     const emptyStars = 5 - fullStars - halfStars;
+    
   return (
     <>
             <div className="tp-product-item-2">
                 <div className="tp-product-thumb-2 p-relative z-index-1 fix w-img">
-                    {/* <Link href={`/product-details/${product.id}`}> */}
+                    {/* <Link href={`/shopcat/product_details/${product.id}`}> */}
                     <Link href={`/product-details`}>
                         <img src={product.image} alt={product.title} />
                     </Link>
