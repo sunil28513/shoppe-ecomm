@@ -114,6 +114,24 @@ const Trending = () => {
                                                     swiper.params.navigation.nextEl = nextRef1.current;
                                                 }}
                                                 modules={[Navigation, Pagination, Autoplay]}
+                                                breakpoints={{
+                                                    320: {
+                                                        slidesPerView: 2,
+                                                        spaceBetween: 10,
+                                                    },
+                                                    400: {
+                                                        slidesPerView: 2,
+                                                        spaceBetween: 20,
+                                                    },
+                                                    768: {
+                                                        slidesPerView: 3,
+                                                        spaceBetween: 30,
+                                                    },
+                                                    1024: {
+                                                        slidesPerView: 4,
+                                                        spaceBetween: 40,
+                                                    },
+                                                }}
                                             >
                                                 {productData.map((product, index) => (
                                                 <SwiperSlide key={index}>
@@ -190,6 +208,24 @@ const Trending = () => {
                                                 swiper.params.navigation.nextEl = nextRef.current;
                                                 }}
                                                 modules={[Navigation, Pagination, Autoplay]}
+                                                breakpoints={{
+                                                    320: {
+                                                        slidesPerView: 2,
+                                                        spaceBetween: 10,
+                                                    },
+                                                    400: {
+                                                        slidesPerView: 2,
+                                                        spaceBetween: 20,
+                                                    },
+                                                    768: {
+                                                        slidesPerView: 3,
+                                                        spaceBetween: 30,
+                                                    },
+                                                    1024: {
+                                                        slidesPerView: 4,
+                                                        spaceBetween: 40,
+                                                    },
+                                                }}
                                             >
                                                 {productData.map((product, index) => (
                                                 <SwiperSlide key={index}>

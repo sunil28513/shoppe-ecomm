@@ -6,7 +6,7 @@ const Footer = () => {
     <>
         <footer>
             <div className="tp-footer-area tp-footer-style-2" style={{background:'#F4F7F9'}}>
-                <div className="tp-footer-top pt-95 pb-40">
+                <div className="tp-footer-top pt-70 pb-40">
                 <div className="container">
                     <div className="row">
                     

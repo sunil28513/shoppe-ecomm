@@ -41,23 +41,22 @@ const Banner = () => {
                     swiper.params.navigation.prevEl = prevRef.current;
                     swiper.params.navigation.nextEl = nextRef.current;
                   }}
-                  // modules={[Navigation, Pagination, Autoplay]}
-                  modules={[Navigation, Pagination]}
+                  modules={[Navigation, Pagination, Autoplay]}
               >
                   <SwiperSlide>
-                      <a href="#">
+                      <Link href="/product-details">
                         <img src="https://cdn.caratlane.com/media/static/images/V4/2024/CL/07_JULY/Banner/SolitaireBlog/Desktop.webp"/>
-                      </a>
+                      </Link>
                   </SwiperSlide>
                   <SwiperSlide>
-                      <a href="#">
+                      <Link  href="/product-details">
                           <img src="https://cdn.caratlane.com/media/static/images/V4/2024/CL/07_JULY/Banner/WorkWear/Desktop1920x694.webp"/>
-                      </a>
+                      </Link>
                   </SwiperSlide>
                   <SwiperSlide>
-                      <a href="#">
+                      <Link  href="/product-details">
                           <img src="https://cdn.caratlane.com/media/static/images/V4/2024/CL/05_May/Banner/Extra/01/Desktop_1920x694.jpg"/> 
-                      </a>
+                      </Link>
                   </SwiperSlide>
                 </Swiper>
             </div>

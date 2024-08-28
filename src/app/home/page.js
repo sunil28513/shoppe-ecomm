@@ -19,51 +19,51 @@ export default function HomePage() {
             <section className="productcat py-4">
                 <div className="container-fluid">
                     <div className="row">
-                        <div className="col-md-6">
+                        <div className="col-6">
                             <Link href="/shopcat">
                                 <img className="img-fluid" src="https://cdn.caratlane.com/media/static/images/V4/2024/Shaya/08-August/Responsive/09/Responsive-05.jpg"/>
                             </Link>
                         </div>
-                        <div className="col-md-6">
+                        <div className="col-6">
                            <div>
                                 <Link href="/shopcat">
                                     <img className="img-fluid" src="https://cdn.caratlane.com/media/static/images/V4/2024/CL/06_JUNE/Banner/RTS/2x.webp"/>
                                 </Link>
                            </div>
-                           <div className="pt-4">
+                           <div className="pt-2 pt-md-4">
                                 <Link href="/shopcat">
                                     <img className="img-fluid" src="https://cdn.caratlane.com/media/static/images/V4/2024/CL/08-AUG/Banner/LatestDesigns/01/1X.webp"/>
                                 </Link>
                            </div>
                         </div>
                     </div>
-                    <div className="row py-5">
-                        <div className="col-md-4 pb-4">
+                    <div className="row py-4 py-md-5">
+                        <div className="col-6 col-md-4 pb-2 pb-md-4">
                             <Link href="/shopcat">
                                 <img className="img-fluid" src="https://cdn.caratlane.com/media/static/images/V4/2024/CL/07_JULY/Banner/tile/02/Desktop_1.png"/>
                             </Link>
                         </div>
-                        <div className="col-md-4 pb-4">
+                        <div className="col-6 col-md-4 pb-2 pb-md-4">
                             <Link href="/shopcat">
                                 <img className="img-fluid" src="https://cdn.caratlane.com/media/static/images/V4/2024/CL/07_JULY/Banner/tile/02/Desktop_4.png"/>
                             </Link>
                         </div>
-                        <div className="col-md-4 pb-4">
+                        <div className="col-6 col-md-4 pb-2 pb-md-4">
                             <Link href="/shopcat">
                                 <img className="img-fluid" src="https://cdn.caratlane.com/media/static/images/V4/2024/CL/07_JULY/Banner/tile/02/Desktop_3.png"/>
                             </Link>
                         </div>
-                        <div className="col-md-4 pb-4">
+                        <div className="col-6 col-md-4 pb-2 pb-md-4">
                             <Link href="/shopcat">
                                 <img className="img-fluid" src="https://cdn.caratlane.com/media/static/images/V4/2024/CL/07_JULY/Banner/tile/02/Desktop_4.png"/>
                             </Link>
                         </div>
-                        <div className="col-md-4 pb-4">
+                        <div className="col-6 col-md-4 pb-2 pb-md-4">
                             <Link href="/shopcat">
                                 <img className="img-fluid" src="https://cdn.caratlane.com/media/static/images/V4/2024/CL/07_JULY/Banner/tile/02/Desktop_5.png"/>
                             </Link>
                         </div>
-                        <div className="col-md-4 pb-4">
+                        <div className="col-6 col-md-4 pb-2 pb-md-4">
                             <Link href="/shopcat">
                                 <img className="img-fluid" src="https://cdn.caratlane.com/media/static/images/V4/2024/CL/07_JULY/Banner/tile/02/Desktop_6.png"/>
                             </Link>
@@ -142,24 +142,24 @@ export default function HomePage() {
                   </Link>
                 </div>            
             </section>
-            <section className="pt-100 pb-100">
-                <div className="container-fluid">
+            <section className="py-4 py-md-5">
+                <div className="container-fluid py-md-4">
                     <div className="row align-items-center">
-                        <div className="col-md-4">
+                        <div className="col-md-4 order-lg-1 mb-3 mb-lg-0">
                             <Link href="/shopcat">
                                 <img className="img-fluid" src="https://cdn.caratlane.com/media/static/images/V4/2024/CL/08-AUG/Banner/CollectionBlock/Disney/Collection_disney_11.jpg"/>
                             </Link>
                         </div>
-                        <div className="col-md-4 text-center">
+                        <div className="col-md-4 order-lg-3 mb-3 mb-lg-0">
+                            <Link href="/shopcat">
+                                <img className="img-fluid" src="https://cdn.caratlane.com/media/static/images/V4/2024/CL/03_MAR/HPbanner/Collection/Collection_Harry_potter.jpg"/>
+                            </Link>
+                        </div>
+                        <div className="col-md-4 text-center order-lg-2 mb-3 mb-lg-0">
                             <Link href="/shopcat">
                                 <img className="img-fluid" src="https://cdn.caratlane.com/media/static/images/V4/2024/CL/05_May/Banner/Collection/Utsav.jpg"/>
                             </Link>
                             <button className="btn btn-primary py-2 px-4 mt-4">View All Collections</button>
-                        </div>
-                        <div className="col-md-4">
-                            <Link href="/shopcat">
-                                <img className="img-fluid" src="https://cdn.caratlane.com/media/static/images/V4/2024/CL/03_MAR/HPbanner/Collection/Collection_Harry_potter.jpg"/>
-                            </Link>
                         </div>
                     </div>
 
@@ -169,32 +169,32 @@ export default function HomePage() {
             <section className="">
                 <div className="container-fluid">
                     <div className="row">
-                        <div className="col-md-6 mb-4">
+                        <div className="col-6 col-md-6 mb-4">
                             <a href="#">
                                 <img className="img-fluid" src="https://cdn.caratlane.com/media/static/images/V4/2024/CL/07_JULY/Banner/ReferAndEarn/2x.webp"/>
                             </a>
                         </div>
-                        <div className="col-md-6 mb-4">
+                        <div className="col-6 col-md-6 mb-4">
                             <a href="#">
                                 <img className="img-fluid" src="https://cdn.caratlane.com/media/static/images/V4/2024/CL/08-AUG/Banner/POP_banner/2x_1.jpg"/>
                             </a>
                         </div>
-                        <div className="col-md-6 mb-4">
+                        <div className="col-6 col-md-6 mb-4">
                             <a href="#">
                                 <img className="img-fluid" src="https://cdn.caratlane.com/media/static/images/V4/2024/CL/06_JUNE/Banner/RTS/2x.webp"/>
                             </a>
                         </div>
-                        <div className="col-md-6 mb-4">
+                        <div className="col-6 col-md-6 mb-4">
                             <a href="#">
                                 <img className="img-fluid" src="https://cdn.caratlane.com/media/static/images/V4/2024/CL/08-AUG/Banner/Kids/2x.webp"/>
                             </a>
                         </div>
-                        <div className="col-md-6 mb-4">
+                        <div className="col-6 col-md-6 mb-4">
                             <a href="#">
                                 <img className="img-fluid" src="https://cdn.caratlane.com/media/static/images/V4/2024/CL/07_JULY/Banner/EarPiercing/2x.webp"/>
                             </a>
                         </div>
-                        <div className="col-md-6 mb-4">
+                        <div className="col-6 col-md-6 mb-4">
                             <a href="#">
                                 <img className="img-fluid" src="https://cdn.caratlane.com/media/static/images/V4/2024/CL/08-AUG/Banner/Liquidation/02/2X.webp"/>
                             </a>
@@ -203,7 +203,7 @@ export default function HomePage() {
                 </div>
             </section>
 
-            <section className="">
+            <section className=" pb-30">
                 <div className="container">
                     <div className="row align-items-center">
                         <div className="col-md-6">
@@ -221,7 +221,7 @@ export default function HomePage() {
                 </div>
             </section>
 
-            <section className="py-5 theme-bg">
+            <section className="py-2 py-md-5 theme-bg">
                 <div className="container">
                     <div className="row justify-content-center">
                         <div className="col-md-5 text-center pb-40">
@@ -242,6 +242,30 @@ export default function HomePage() {
             <Trending/>
 
             <Testimonials/>
+
+            <section className="py-5">
+                <div className="container py-5">
+                    <div className="row justify-content-center">
+                        <div className="col-md-10">
+                            <div className="row">
+                                <div className="col-md-6">
+                                    <div className="d-flex align-items-center">
+                                        <img src="https://assets.cltstatic.com/images/responsive/purple-gift-icon.png" alt="" />
+                                        <div className="text-white">
+                                            <h2>Join CaratLane Insider</h2>
+                                            <p>To discover enticing deals, latest arrivals, & more</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className="col-md-6">
+                                    <input type="text" className="form-control" placeholder="Enter email" />
+                                    <button className="btn btn-danger btn-block w-100 mt-3">Submit</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
 
             <Footer/>
 
