@@ -225,7 +225,7 @@ export default function HomePage() {
                 <div className="container">
                     <div className="row justify-content-center">
                         <div className="col-md-5 text-center pb-40">
-                            <img src="https://images.cltstatic.com/live-images/c656a495c4564a4c8ac8a1f5dee414bd.png"/>
+                            <img className="img-fluid" src="https://images.cltstatic.com/live-images/c656a495c4564a4c8ac8a1f5dee414bd.png"/>
                             <p className="text-white">The highest quality of craftsmanship and innovation,
                             that brings you modern, everyday designs.</p>
                             <button className="btn btn-primary px-3">Know more</button>
@@ -244,7 +244,7 @@ export default function HomePage() {
             <Testimonials/>
 
             <section className="py-5">
-                <div className="container py-5">
+                <div className="container py-0 py-md-5">
                     <div className="row justify-content-center">
                         <div className="col-md-10">
                             <div className="row">

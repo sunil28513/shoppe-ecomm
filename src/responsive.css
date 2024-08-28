@@ -65,6 +65,11 @@
         left: 2px !important;
     }
 
+    .tp-header-bottom-2 {
+        padding-top: 7px !important;
+        padding-bottom: 7px !important;
+    }
+
 }
 
 @media (max-width:575px){

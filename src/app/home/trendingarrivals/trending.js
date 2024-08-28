@@ -72,7 +72,7 @@ const Trending = () => {
                         <div className="tp-trending-wrapper">
                             <div className="tp-section-title-wrapper-2 mb-50">
                                 <div className="row">
-                                    <div className="col-md-6">
+                                    <div className="col-6 col-md-6">
                                         <span className="tp-section-title-pre-2">
                                             More to Discover
                                             <svg width="82" height="22" viewBox="0 0 82 22" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -81,7 +81,7 @@ const Trending = () => {
                                         </span>
                                         <h3 className="tp-section-title-2">Trending Arrivals</h3>
                                     </div>
-                                    <div className="col-md-6">
+                                    <div className="col-6 col-md-6">
                                         <Nav className="justify-content-end gap-2" variant="pills">
                                             <Nav.Item>
                                             <Nav.Link eventKey="men">Men</Nav.Link>
