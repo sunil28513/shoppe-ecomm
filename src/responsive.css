@@ -3,6 +3,9 @@
 }
 
 @media (max-width:767px){
+    .custom-arrow {
+        display: none !important;
+    }
     .tp-header-search-2 input {
         height: 45px !important;
         padding-left: 15px !important;
@@ -68,12 +71,28 @@
     .tp-header-bottom-2 {
         padding-top: 7px !important;
         padding-bottom: 7px !important;
+        /* position: relative !important; */
     }
     .offcanvas.offcanvas-top{
         max-height: 100px !important;
     }
     .tp-search-area{
         padding: 20px 15px 10px !important;
+    }
+
+    .tp-search-input{
+        position: relative;
+    }
+    .tp-search-input input{
+        padding-left: 30px !important;
+        border-color: var(--tp-theme-secondary) !important;
+    }
+    .tp-search-input .searchicon{
+        position: absolute;
+        top: 8px;
+        left: 7px;
+        font-size: 16px;
+        color: var(--tp-theme-secondary) !important;
     }
 
 }

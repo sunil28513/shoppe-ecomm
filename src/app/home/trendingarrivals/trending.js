@@ -12,9 +12,12 @@ import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
 const Trending = () => {
     const prevRef = useRef(null);
     const nextRef = useRef(null);
-    
+
+
     const prevRef1 = useRef(null);
     const nextRef1 = useRef(null);
+    const prevRef2 = useRef(null);
+    const nextRef2 = useRef(null);
 
     const productData = [
         {

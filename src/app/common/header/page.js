@@ -1,8 +1,8 @@
 "use client"
 import Image from 'next/image'
 import { FiSearch } from "react-icons/fi";
-import { FaRegHeart, FaRegUser   } from "react-icons/fa";
-import { BsHandbag } from "react-icons/bs";
+import { FaRegHeart, FaRegUser, FaSearch   } from "react-icons/fa";
+import { BsHandbag, BsSearch } from "react-icons/bs";
 import { RiMenu3Line } from "react-icons/ri";
 import { MdLogin, MdOutlineHome } from "react-icons/md";
 
@@ -14,10 +14,8 @@ import '../../../custom.css'
 import Link from 'next/link';
 import MobileMenus from './mobilemenus';
 import MobileSearch from './mobilesearch';
-
+import MobileSlideMenus from './MobileSlideMenus';
 export default function Header() {
-
-
     return (
         <>
             <div id="tp-bottom-menu-sticky" className="tp-mobile-menu d-lg-none">
@@ -121,6 +119,8 @@ export default function Header() {
                         </div>
                      </div>
                   </div>
+
+                
                </div>
             </header>
         </>

@@ -5,10 +5,20 @@ import Featured from "./featured/featured";
 import Trending from "./trendingarrivals/trending";
 import Testimonials from "../testimonials/Testimonials";
 import Link from "next/link";
+import MobileSlideMenus from "../common/header/MobileSlideMenus";
+import { FaSearch } from "react-icons/fa";
 
 export default function HomePage() {
     return (
         <>
+
+            <div className='d-block d-lg-none container pt-80 pb-10'>
+                <div className="tp-search-input mb-10">
+                <input type="text" placeholder="Search product..." />
+                <span className='searchicon'><FaSearch/> </span>
+                </div>
+            </div>
+            <MobileSlideMenus/>
             
             <Banner/>
             <section className="productcat py-4">
@@ -35,32 +45,38 @@ export default function HomePage() {
                     <div className="row py-4 py-md-5">
                         <div className="col-6 col-md-4 pb-2 pb-md-4">
                             <Link href="/shopcat">
-                                <img className="img-fluid" src="https://cdn.caratlane.com/media/static/images/V4/2024/CL/07_JULY/Banner/tile/02/Desktop_1.png"/>
+                                <img className="img-fluid d-none d-lg-block" src="https://cdn.caratlane.com/media/static/images/V4/2024/CL/07_JULY/Banner/tile/02/Desktop_1.png"/>
+                                <img className="img-fluid d-block d-lg-none" src="https://cdn.caratlane.com/media/static/images/V4/2024/CL/07_JULY/Banner/tile/02/mobile_1.png"/>
                             </Link>
                         </div>
                         <div className="col-6 col-md-4 pb-2 pb-md-4">
                             <Link href="/shopcat">
-                                <img className="img-fluid" src="https://cdn.caratlane.com/media/static/images/V4/2024/CL/07_JULY/Banner/tile/02/Desktop_4.png"/>
+                                <img className="img-fluid d-none d-lg-block" src="https://cdn.caratlane.com/media/static/images/V4/2024/CL/07_JULY/Banner/tile/02/Desktop_4.png"/>
+                                <img className="img-fluid d-block d-lg-none" src="https://cdn.caratlane.com/media/static/images/V4/2024/CL/07_JULY/Banner/tile/02/mobile_4.png"/>
                             </Link>
                         </div>
                         <div className="col-6 col-md-4 pb-2 pb-md-4">
                             <Link href="/shopcat">
-                                <img className="img-fluid" src="https://cdn.caratlane.com/media/static/images/V4/2024/CL/07_JULY/Banner/tile/02/Desktop_3.png"/>
+                                <img className="img-fluid d-none d-lg-block" src="https://cdn.caratlane.com/media/static/images/V4/2024/CL/07_JULY/Banner/tile/02/Desktop_3.png"/>
+                                <img className="img-fluid d-block d-lg-none" src="https://cdn.caratlane.com/media/static/images/V4/2024/CL/07_JULY/Banner/tile/02/mobile_3.png"/>
                             </Link>
                         </div>
                         <div className="col-6 col-md-4 pb-2 pb-md-4">
                             <Link href="/shopcat">
-                                <img className="img-fluid" src="https://cdn.caratlane.com/media/static/images/V4/2024/CL/07_JULY/Banner/tile/02/Desktop_4.png"/>
+                                <img className="img-fluid d-none d-lg-block" src="https://cdn.caratlane.com/media/static/images/V4/2024/CL/07_JULY/Banner/tile/02/Desktop_4.png"/>
+                                <img className="img-fluid d-block d-lg-none" src="https://cdn.caratlane.com/media/static/images/V4/2024/CL/07_JULY/Banner/tile/02/mobile_5.png"/>
                             </Link>
                         </div>
                         <div className="col-6 col-md-4 pb-2 pb-md-4">
                             <Link href="/shopcat">
-                                <img className="img-fluid" src="https://cdn.caratlane.com/media/static/images/V4/2024/CL/07_JULY/Banner/tile/02/Desktop_5.png"/>
+                                <img className="img-fluid d-none d-lg-block" src="https://cdn.caratlane.com/media/static/images/V4/2024/CL/07_JULY/Banner/tile/02/Desktop_5.png"/>
+                                <img className="img-fluid d-block d-lg-none" src="https://cdn.caratlane.com/media/static/images/V4/2024/CL/07_JULY/Banner/tile/02/mobile_2.png"/>
                             </Link>
                         </div>
                         <div className="col-6 col-md-4 pb-2 pb-md-4">
                             <Link href="/shopcat">
-                                <img className="img-fluid" src="https://cdn.caratlane.com/media/static/images/V4/2024/CL/07_JULY/Banner/tile/02/Desktop_6.png"/>
+                                <img className="img-fluid d-none d-lg-block" src="https://cdn.caratlane.com/media/static/images/V4/2024/CL/07_JULY/Banner/tile/02/Desktop_6.png"/>
+                                <img className="img-fluid d-block d-lg-none" src="https://cdn.caratlane.com/media/static/images/V4/2024/CL/07_JULY/Banner/tile/02/mobile_6.png"/>
                             </Link>
                         </div>
                     </div>

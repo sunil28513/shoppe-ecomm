@@ -33,8 +33,7 @@ const MobileSearch = () => {
                             </div>
                             <form action="#">
                                 <div className="tp-search-input mb-10">
-                                <input type="text" placeholder="Search for product..." />
-                                <button type="submit"><i className="flaticon-search-1"></i></button>
+                                  <input type="text" placeholder="Search for product..." />
                                 </div>
                                 <div className="tp-search-category">
                                 <span>Search : </span>
