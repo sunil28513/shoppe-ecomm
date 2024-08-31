@@ -14,8 +14,8 @@ const ProductContCard = ({product }) => {
     <>
             <div className="tp-product-item-2">
                 <div className="tp-product-thumb-2 p-relative z-index-1 fix w-img">
-                    {/* <Link href={`/shopcat/product_details/${product.id}`}> */}
-                    <Link href={`/product-details`}>
+                    <Link href={`/shopcat/${product.id}`}>
+                    {/* <Link href={`/product-details`}> */}
                         <img src={product.image} alt={product.title} />
                     </Link>
                     <div className="tp-product-action-2 tp-product-action-blackStyle">

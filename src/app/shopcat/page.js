@@ -9,7 +9,7 @@ import Link from 'next/link';
 export default function Page() {
   return (
     <>
-    <Header/>
+      <Header/>
         <section className="breadcrumb__area include-bg pt-100 pb-30 bg-light">
             <div className="container">
                <div className="row">
