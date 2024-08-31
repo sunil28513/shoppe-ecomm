@@ -20575,8 +20575,8 @@ only screen and (min-width: 576px) and (max-width: 767px),
 	font-size: 16px;
 	font-weight: 500;
 	padding: 10px 30px;
-	background-color: var(--tp-theme-primary);
-	color: var(--tp-common-white);
+	background-color: var(--tp-theme-secondary);
+	color: var(--tp-common-black);
 }
 
 .tp-product-details-buy-now-btn:hover {
