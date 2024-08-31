@@ -97,7 +97,7 @@ const ProductDetails = async ({ params }) => {
                                     <span className="tp-cart-minus">
                                        <FaMinus/>                                                           
                                     </span>
-                                    <input className="tp-cart-input" type="text" value="1" />
+                                    <input className="tp-cart-input" type="text" />
                                     <span className="tp-cart-plus">
                                        <FaPlus/>
                                     </span>

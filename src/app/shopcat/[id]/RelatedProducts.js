@@ -1,12 +1,10 @@
-
 "use client"
 import React, { useRef } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import 'swiper/css/navigation';
-import { Navigation,Scrollbar, Pagination, Autoplay } from 'swiper/modules';
-import {CartIcon, EyeIcon, WishListIcon} from '../../SvgIcons'
+import { Navigation, Scrollbar, Pagination, Autoplay } from 'swiper/modules';
+import { CartIcon, EyeIcon, WishListIcon } from '../../SvgIcons';
 import { MdOutlineStar, MdOutlineStarHalf } from "react-icons/md";
-
 
 const RelatedProducts = () => {
     const prevRef1 = useRef(null);
@@ -52,25 +50,23 @@ const RelatedProducts = () => {
             newPrice: "$330.00",
             oldPrice: "$460.00",
             rating: 4.2
-          },
-      ];
+        },
+    ];
 
-  return (
-    <>
-         <section className="tp-related-product pt-60 pb-60">
+    return (
+        <section className="tp-related-product pt-60 pb-60">
             <div className="container">
-               <div className="row">
-                  <div className="tp-section-title-wrapper-6 text-center mb-40">
-                     <h3 className="tp-section-title-6">Related Products</h3>
-                  </div>
-               </div>
-               <div className="row">
-                <Swiper 
+                <div className="row">
+                    <div className="tp-section-title-wrapper-6 text-center mb-40">
+                        <h3 className="tp-section-title-6">Related Products</h3>
+                    </div>
+                </div>
+                <div className="row">
+                    <Swiper 
                         className="mySwiper"
                         spaceBetween={30}
                         slidesPerView={4}
                         pagination={{ clickable: true }}
-                        Scrollbar={true}
                         autoplay={{ delay: 3000 }}
                         loop
                         navigation={{
@@ -102,62 +98,58 @@ const RelatedProducts = () => {
                         }}
                     >
                         {productData.map((product, index) => (
-                        <SwiperSlide key={index}>
-                            <div className="tp-trending-item swiper-slide">
-                            <div className="tp-product-item-2">
-                                <div className="tp-product-thumb-2 p-relative z-index-1 fix w-img">
-                                <a href="#">
-                                    <img src={product.image} alt={product.title} />
-                                </a>
-                                <div className="tp-product-action-2 tp-product-action-blackStyle">
-                                    <div className="tp-product-action-item-2 d-flex flex-column">
-                                    <button type="button" className="tp-product-action-btn-2 tp-product-add-cart-btn">
-                                        <CartIcon />                                          
-                                        <span className="tp-product-tooltip tp-product-tooltip-right">Add to Cart</span>
-                                    </button>
-                                    <button type="button" className="tp-product-action-btn-2 tp-product-quick-view-btn" data-bs-toggle="modal" data-bs-target="#producQuickViewModal">
-                                        <EyeIcon />                                                                      
-                                        <span className="tp-product-tooltip tp-product-tooltip-right">Quick View</span>
-                                    </button>
-                                    <button type="button" className="tp-product-action-btn-2 tp-product-add-to-wishlist-btn">
-                                        <WishListIcon />                                                                               
-                                        <span className="tp-product-tooltip tp-product-tooltip-right">Add To Wishlist</span>
-                                    </button>
+                            <SwiperSlide key={index}>
+                                <div className="tp-trending-item swiper-slide">
+                                    <div className="tp-product-item-2">
+                                        <div className="tp-product-thumb-2 p-relative z-index-1 fix w-img">
+                                            <a href="#">
+                                                <img src={product.image} alt={product.title} />
+                                            </a>
+                                            <div className="tp-product-action-2 tp-product-action-blackStyle">
+                                                <div className="tp-product-action-item-2 d-flex flex-column">
+                                                    <button type="button" className="tp-product-action-btn-2 tp-product-add-cart-btn">
+                                                        <CartIcon />                                          
+                                                        <span className="tp-product-tooltip tp-product-tooltip-right">Add to Cart</span>
+                                                    </button>
+                                                    <button type="button" className="tp-product-action-btn-2 tp-product-quick-view-btn" data-bs-toggle="modal" data-bs-target="#producQuickViewModal">
+                                                        <EyeIcon />                                                                      
+                                                        <span className="tp-product-tooltip tp-product-tooltip-right">Quick View</span>
+                                                    </button>
+                                                    <button type="button" className="tp-product-action-btn-2 tp-product-add-to-wishlist-btn">
+                                                        <WishListIcon />                                                                               
+                                                        <span className="tp-product-tooltip tp-product-tooltip-right">Add To Wishlist</span>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div className="tp-product-content-2 pt-15">
+                                            <div className="tp-product-tag-2">
+                                                <a href="#">{product.store}</a>
+                                            </div>
+                                            <h3 className="tp-product-title-2">
+                                                <a href="#">{product.title}</a>
+                                            </h3>
+                                            <div className="tp-product-rating-icon tp-product-rating-icon-2">
+                                                {[...Array(5)].map((_, i) => (
+                                                    <span key={i}>
+                                                        {i + 0.5 === product.rating ? <MdOutlineStarHalf /> : <MdOutlineStar />}
+                                                    </span>
+                                                ))}
+                                            </div>
+                                            <div className="tp-product-price-wrapper-2">
+                                                <span className="tp-product-price-2 new-price">{product.newPrice}</span>
+                                                <span className="tp-product-price-2 old-price">{product.oldPrice}</span>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
-                                </div>
-                                <div className="tp-product-content-2 pt-15">
-                                <div className="tp-product-tag-2">
-                                    <a href="#">{product.store}</a>
-                                </div>
-                                <h3 className="tp-product-title-2">
-                                    <a href="#">{product.title}</a>
-                                </h3>
-                                <div className="tp-product-rating-icon tp-product-rating-icon-2">
-                                    {[...Array(5)].map((_, i) => (
-                                    <span key={i}>
-                                        {i + 0.5 === product.rating ? <MdOutlineStarHalf /> : <MdOutlineStar />}
-                                    </span>
-                                    ))}
-                                </div>
-                                <div className="tp-product-price-wrapper-2">
-                                    <span className="tp-product-price-2 new-price">{product.newPrice}</span>
-                                    <span className="tp-product-price-2 old-price">{product.oldPrice}</span>
-                                </div>
-                                </div>
-                            </div>
-                            </div>
-                        </SwiperSlide>
+                            </SwiperSlide>
                         ))}
-                </Swiper>
-               </div>
+                    </Swiper>
+                </div>
             </div>
-         </section>
-
-
-
-    </>
-  )
+        </section>
+    );
 }
 
-export default RelatedProducts
+export default RelatedProducts;

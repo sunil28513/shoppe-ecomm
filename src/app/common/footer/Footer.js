@@ -106,7 +106,7 @@ const Footer = () => {
                                 <div className="col-md-6">
                                     <div className="tp-footer-payment text-md-end">
                                         <p>
-                                            <img src="assets/img/footer/footer-pay-2.png" alt="" />
+                                            <img src="/assets/img/footer/footer-pay-2.png" alt="" />
                                         </p>
                                     </div>
                                 </div>
