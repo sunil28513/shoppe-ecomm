@@ -42,28 +42,22 @@ const ProductDetails = async ({ params }) => {
                   <div className="row row-gap-3">
                      <div className="col-6 col-md-6">
                         {/* <img className='img-fluid' src={product.image} alt={product.title} /> */}
-                        <img className='img-fluid border' src="assets/img/product/details/1.JPG" alt={product.title} />
+                        <img className='img-fluid border' src="https://cdn.caratlane.com/media/catalog/product/U/T/UT00709-1Y0000_1_lar.jpg" alt={product.title} />
                      </div>
                      <div className="col-6 col-md-6">
-                        <img className='img-fluid border' src={`assets/img/product/details/2.JPG`} alt={product.title} />
+                        <img className='img-fluid border' src={`https://cdn.caratlane.com/media/catalog/product/U/T/UT00709-1Y0000_3_lar.jpg`} alt={product.title} />
                      </div>
                      <div className="col-6 col-md-6">
-                        <img className='img-fluid border' src={`assets/img/product/details/3.JPG`} alt={product.title} />
+                        <img className='img-fluid border' src={`https://cdn.caratlane.com/media/catalog/product/U/T/UT00709-1Y0000_4_lar.jpg`} alt={product.title} />
                      </div>
                      <div className="col-6 col-md-6">
-                        <img className='img-fluid border' src={`assets/img/product/details/4.JPG`} alt={product.title} />
+                        <img className='img-fluid border' src={`https://cdn.caratlane.com/media/catalog/product/U/T/UT00709-1Y0000_6_lar.jpg`} alt={product.title} />
                      </div>
                      <div className="col-6 col-md-6">
-                        <img className='img-fluid border' src={`assets/img/product/details/1.JPG`} alt={product.title} />
+                        <img className='img-fluid border' src={`https://cdn.caratlane.com/media/catalog/product/J/T/JT00935-1YP900_6_lar.jpg`} alt={product.title} />
                      </div>
                      <div className="col-6 col-md-6">
-                        <img className='img-fluid border' src={`assets/img/product/details/3.JPG`} alt={product.title} />
-                     </div>
-                     <div className="col-6 col-md-6">
-                        <img className='img-fluid border' src={`assets/img/product/details/1.JPG`} alt={product.title} />
-                     </div>
-                     <div className="col-6 col-md-6">
-                        <img className='img-fluid border' src={`assets/img/product/details/3.JPG`} alt={product.title} />
+                        <img className='img-fluid border' src={`https://cdn.caratlane.com/media/catalog/product/J/T/JT00935-1YP900_6_lar.jpg`} alt={product.title} />
                      </div>
                   </div>
               </div>
