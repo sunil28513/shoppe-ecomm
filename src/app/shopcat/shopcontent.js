@@ -168,7 +168,7 @@ const ShopContent = () => {
         </section>
 
 
-        <Offcanvas show={show} onHide={handleClose}>
+    <Offcanvas show={show} onHide={handleClose}>
         <Offcanvas.Header closeButton>
           <Offcanvas.Title></Offcanvas.Title>
         </Offcanvas.Header>

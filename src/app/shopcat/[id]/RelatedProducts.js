@@ -150,59 +150,6 @@ const RelatedProducts = () => {
                         </SwiperSlide>
                         ))}
                 </Swiper>
-
-                  {/* <div class="tp-product-related-slider">
-                     <div class="tp-product-related-slider-active swiper-container  mb-10">
-                        <div class="swiper-wrapper">
-                           <div class="swiper-slide">
-                              <div class="tp-product-item-3 tp-product-style-primary mb-50">
-                                 <div class="tp-product-thumb-3 mb-15 fix p-relative z-index-1">
-                                    <a href="product-details.html">
-                                       <img src="/assets/img/product/related/product-related-1.jpg" alt="" />
-                                    </a>
-                                    <div class="tp-product-badge">
-                                       <span class="product-offer">-25%</span>
-                                    </div>
-                                    <div class="tp-product-action-3 tp-product-action-4 has-shadow tp-product-action-primaryStyle">
-                                       <div class="tp-product-action-item-3 d-flex flex-column">
-                                          <button type="button" class="tp-product-action-btn-3 tp-product-add-cart-btn">
-                                             <BsCartDash/>                                        
-                                             <span class="tp-product-tooltip">Add to Cart</span>
-                                          </button>
-                                          <button type="button" class="tp-product-action-btn-3 tp-product-quick-view-btn" data-bs-toggle="modal" data-bs-target="#producQuickViewModal">
-                                             <BsEye/>                                                                       
-                                             <span class="tp-product-tooltip">Quick View</span>
-                                          </button>
-                                          <button type="button" class="tp-product-action-btn-3 tp-product-add-to-wishlist-btn">
-                                          <BsHeart />                                                                               
-                                             <span class="tp-product-tooltip">Add To Wishlist</span>
-                                          </button>
-                                       </div>
-                                    </div>
-                                    <div class="tp-product-add-cart-btn-large-wrapper">
-                                       <button type="button" class="tp-product-add-cart-btn-large">
-                                             Add To Cart                                           
-                                       </button>
-                                    </div>
-                                 </div>
-                                 <div class="tp-product-content-3">
-                                    <div class="tp-product-tag-3">
-                                       <span>Tablet</span>
-                                    </div>
-                                    <h3 class="tp-product-title-3">
-                                       <a href="product-details.html">GalaxyS6 Android Tablet</a>
-                                    </h3>
-                                    <div class="tp-product-price-wrapper-3">
-                                       <span class="tp-product-price-3 new-price">$102.00</span>
-                                       <span class="tp-product-price-3 old-price">$226.00</span>
-                                    </div>
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
-                     </div>
-                     <div class="tp-related-swiper-scrollbar tp-swiper-scrollbar"></div>
-                  </div> */}
                </div>
             </div>
          </section>
