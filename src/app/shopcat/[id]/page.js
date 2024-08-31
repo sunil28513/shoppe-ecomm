@@ -1,12 +1,10 @@
 // "use client"
 import React from 'react';
-import Header from '../../common/header/page'
 import Link from 'next/link';
 import { BsFacebook, BsHeart, BsLinkedin, BsPlus, BsTwitter } from 'react-icons/bs';
 import { FaMinus } from 'react-icons/fa';
 import { FaPlus } from 'react-icons/fa6';
 import RelatedProducts from './RelatedProducts';
-import Footer from '../../common/footer/Footer';
 
 const ProductDetails = async ({ params }) => {
   const { id } = params;
@@ -19,7 +17,6 @@ const ProductDetails = async ({ params }) => {
   return (
     <>
     
-    <Header/>
     <section className="breadcrumb__area include-bg pt-100 pb-30 bg-light">
          <div className="container">
             <div className="row">
@@ -145,7 +142,6 @@ const ProductDetails = async ({ params }) => {
      </section>
 <hr />
      <RelatedProducts/>
-     <Footer/>
     </>
   );
 };

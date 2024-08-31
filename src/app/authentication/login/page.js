@@ -10,7 +10,7 @@ const Login = () => {
     <>
             {/* <Header /> */}
 
-         <section class="tp-login-area p-relative z-index-1 fix">
+         <section class="tp-login-area p-relative z-index-1 fix pt-50">
             <div class="tp-login-shape">
                <img class="tp-login-shape-1" src="/assets/img/login/login-shape-1.png" alt="" />
                <img class="tp-login-shape-2" src="/assets/img/login/login-shape-2.png" alt="" />

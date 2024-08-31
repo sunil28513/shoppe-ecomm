@@ -44,17 +44,17 @@ const Banner = () => {
                   modules={[Navigation, Pagination, Autoplay]}
               >
                   <SwiperSlide>
-                      <Link href="/product-details">
+                      <Link href="/shopcat">
                         <img src="https://cdn.caratlane.com/media/static/images/V4/2024/CL/07_JULY/Banner/SolitaireBlog/Desktop.webp"/>
                       </Link>
                   </SwiperSlide>
                   <SwiperSlide>
-                      <Link  href="/product-details">
+                      <Link  href="/shopcat">
                           <img src="https://cdn.caratlane.com/media/static/images/V4/2024/CL/07_JULY/Banner/WorkWear/Desktop1920x694.webp"/>
                       </Link>
                   </SwiperSlide>
                   <SwiperSlide>
-                      <Link  href="/product-details">
+                      <Link  href="/shopcat">
                           <img src="https://cdn.caratlane.com/media/static/images/V4/2024/CL/05_May/Banner/Extra/01/Desktop_1920x694.jpg"/> 
                       </Link>
                   </SwiperSlide>
@@ -70,17 +70,6 @@ const Banner = () => {
                </div>  
                <div className="tp-slider-dot tp-swiper-dot"></div>
          </section>
-
-
-        {/* <section className="tp-slider-area p-relative z-index-1">
-            <div className="tp-slider-active-2 swiper-container">
-                <div className="swiper-wrapper">
-                    <BannerItem/>
-                </div>
-                <div className="tp-swiper-dot tp-slider-2-dot"></div>
-            </div>
-        </section> */}
-
     </>
   )
 }

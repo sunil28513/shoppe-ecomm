@@ -4,18 +4,13 @@ import ProductList from "./productlist/ProductList";
 import Featured from "./featured/featured";
 import Trending from "./trendingarrivals/trending";
 import Testimonials from "../testimonials/Testimonials";
-import Header from "../common/header/page";
-import Footer from "../common/footer/Footer";
 import Link from "next/link";
-
 
 export default function HomePage() {
     return (
         <>
-              <Header/>
-
+            
             <Banner/>
-
             <section className="productcat py-4">
                 <div className="container-fluid">
                     <div className="row">
@@ -267,7 +262,7 @@ export default function HomePage() {
                 </div>
             </section>
 
-            <Footer/>
+          
 
 
         </>
