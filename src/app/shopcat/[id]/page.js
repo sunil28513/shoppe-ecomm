@@ -40,29 +40,29 @@ const ProductDetails = async ({ params }) => {
             <div className="row justify-content-between">
               <div className="col-md-7">
                   <div className="row row-gap-3">
-                     <div className="col-md-6">
+                     <div className="col-6 col-md-6">
                         {/* <img className='img-fluid' src={product.image} alt={product.title} /> */}
                         <img className='img-fluid border' src="/assets/img/product/details/1.JPG" alt={product.title} />
                      </div>
-                     <div className="col-md-6">
+                     <div className="col-6 col-md-6">
                         <img className='img-fluid border' src={`/assets/img/product/details/2.JPG`} alt={product.title} />
                      </div>
-                     <div className="col-md-6">
+                     <div className="col-6 col-md-6">
                         <img className='img-fluid border' src={`/assets/img/product/details/3.JPG`} alt={product.title} />
                      </div>
-                     <div className="col-md-6">
+                     <div className="col-6 col-md-6">
                         <img className='img-fluid border' src={`/assets/img/product/details/4.JPG`} alt={product.title} />
                      </div>
-                     <div className="col-md-6">
+                     <div className="col-6 col-md-6">
                         <img className='img-fluid border' src={`/assets/img/product/details/1.JPG`} alt={product.title} />
                      </div>
-                     <div className="col-md-6">
+                     <div className="col-6 col-md-6">
                         <img className='img-fluid border' src={`/assets/img/product/details/3.JPG`} alt={product.title} />
                      </div>
-                     <div className="col-md-6">
+                     <div className="col-6 col-md-6">
                         <img className='img-fluid border' src={`/assets/img/product/details/1.JPG`} alt={product.title} />
                      </div>
-                     <div className="col-md-6">
+                     <div className="col-6 col-md-6">
                         <img className='img-fluid border' src={`/assets/img/product/details/3.JPG`} alt={product.title} />
                      </div>
                   </div>
