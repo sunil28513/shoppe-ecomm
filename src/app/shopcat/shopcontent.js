@@ -95,8 +95,8 @@ const ShopContent = () => {
                                                                     <option >On Sale</option>
                                                                 </select>
                                                             </div>
-                                                            <div class="d-block d-md-none tp-shop-top-filter">
-                                                                <button onClick={handleShow} type="button" class="tp-filter-btn filter-open-btn">
+                                                            <div className="d-block d-md-none tp-shop-top-filter">
+                                                                <button onClick={handleShow} type="button" className="tp-filter-btn filter-open-btn">
                                                                     <span>
                                                                         <MdOutlineFilterAlt/>
                                                                     </span>

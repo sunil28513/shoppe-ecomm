@@ -47,11 +47,16 @@ const ProductContCard = ({product }) => {
                     </h3>
                     <div className="tp-product-rating-icon tp-product-rating-icon-2">
                         <span title={`Product Rating : ${rate}`}>
-                            {Array(fullStars).fill(<MdOutlineStar />)}
-                            {halfStars === 1 && <MdOutlineStarHalf />}
-                            {Array(emptyStars).fill(<MdOutlineStarOutline />)}
+                            {Array(fullStars).fill(null).map((_, index) => (
+                                <MdOutlineStar key={`full-${index}`} />
+                            ))}
+                            {halfStars === 1 && <MdOutlineStarHalf key="half" />}
+                            {Array(emptyStars).fill(null).map((_, index) => (
+                                <MdOutlineStarOutline key={`empty-${index}`} />
+                            ))}
                         </span>
                     </div>
+
                     <div className="tp-product-price-wrapper-2">
                         <span className="tp-product-price-2 new-price">${product.price}</span>
                     </div>

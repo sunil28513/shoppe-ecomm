@@ -57,14 +57,14 @@ const RelatedProducts = () => {
 
   return (
     <>
-         <section class="tp-related-product pt-60 pb-60">
-            <div class="container">
-               <div class="row">
-                  <div class="tp-section-title-wrapper-6 text-center mb-40">
-                     <h3 class="tp-section-title-6">Related Products</h3>
+         <section className="tp-related-product pt-60 pb-60">
+            <div className="container">
+               <div className="row">
+                  <div className="tp-section-title-wrapper-6 text-center mb-40">
+                     <h3 className="tp-section-title-6">Related Products</h3>
                   </div>
                </div>
-               <div class="row">
+               <div className="row">
                 <Swiper 
                         className="mySwiper"
                         spaceBetween={30}
