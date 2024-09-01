@@ -170,7 +170,7 @@ export default function HomePage() {
                             <Link href="/shopcat">
                                 <img className="img-fluid" src="https://cdn.caratlane.com/media/static/images/V4/2024/CL/05_May/Banner/Collection/Utsav.jpg"/>
                             </Link>
-                            <button className="btn btn-primary py-2 px-4 mt-4">View All Collections</button>
+                            <Link href={`/shopcat`} className="btn btn-primary py-2 px-4 mt-4">View All Collections</Link>
                         </div>
                     </div>
 
@@ -222,9 +222,6 @@ export default function HomePage() {
                         </div>
                         <div className="col-md-6">
                             <h2>A Stylish Upgrade</h2>
-                            {/* <div className="underline__container ">
-                                <span> </span>
-                             </div> */}
                              <p className="py-3">- Enjoy 0% Deduction on your gold exchange value. Please note: The old gold doesn’t have to be from only CaratLane, it can be any gold jewellery you have. </p>
                              <button className="btn btn-primary btn-lg mt-3 px-4">Know More</button>
                         </div>
@@ -270,7 +267,7 @@ export default function HomePage() {
                                 </div>
                                 <div className="col-md-6">
                                     <input type="text" className="form-control" placeholder="Enter email" />
-                                    <button className="btn btn-danger btn-block w-100 mt-3">Submit</button>
+                                    <button className="btn btn-primary btn-block w-100 mt-3">Submit</button>
                                 </div>
                             </div>
                         </div>

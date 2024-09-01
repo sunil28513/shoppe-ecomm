@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Profie = () => {
+const Profile = () => {
   return (
     <>
         <h1>Profile</h1>

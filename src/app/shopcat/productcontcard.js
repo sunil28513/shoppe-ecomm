@@ -23,10 +23,10 @@ const ProductContCard = ({product }) => {
                                 <BsCartDash/>
                                 <span className="tp-product-tooltip tp-product-tooltip-right">Add to Cart</span>
                             </button>
-                            <button type="button" className="tp-product-action-btn-2 tp-product-quick-view-btn" data-bs-toggle="modal" data-bs-target="#producQuickViewModal">
+                            <Link href={`/shopcat/${product.id}`} type="button" className="tp-product-action-btn-2 tp-product-quick-view-btn" data-bs-toggle="modal" data-bs-target="#producQuickViewModal">
                                 <BsEye />
                                 <span className="tp-product-tooltip tp-product-tooltip-right">Quick View</span>
-                            </button>
+                            </Link>
                             <button type="button" className="tp-product-action-btn-2 tp-product-add-to-wishlist-btn">
                                 <BsHeart />
                                 <span className="tp-product-tooltip tp-product-tooltip-right">Add To Wishlist</span>
