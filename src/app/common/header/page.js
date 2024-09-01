@@ -31,10 +31,10 @@ export default function Header() {
                      </div>
                      <div className="col">
                         <div className="tp-mobile-item text-center">
-                           <button className="tp-mobile-item-btn tp-search-open-btn">
+                           <Link href={`/wishlist`} className="tp-mobile-item-btn tp-search-open-btn">
                               <FaRegHeart />
                               <span>Wishlist</span>
-                           </button>
+                           </Link>
                         </div>
                      </div>
                      <div className="col">
@@ -42,10 +42,10 @@ export default function Header() {
                      </div>
                      <div className="col">
                         <div className="tp-mobile-item text-center">
-                           <a href="#" className="tp-mobile-item-btn">
+                           <Link href="/profile" className="tp-mobile-item-btn">
                               <FaRegUser/>
                               <span>Account</span>
-                           </a>
+                           </Link>
                         </div>
                      </div>
                      <div className="col">

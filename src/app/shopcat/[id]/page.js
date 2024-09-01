@@ -107,7 +107,7 @@ const ProductDetails = async ({ params }) => {
                                  <button className="tp-product-details-add-to-cart-btn w-100">Add To Cart</button>
                               </div>
                            </div>
-                           <Link href="/checkout"  className="tp-product-details-buy-now-btn w-100 text-center">Buy Now</Link>
+                           <Link href="/cart"  className="tp-product-details-buy-now-btn w-100 text-center">Buy Now</Link>
                         </div>
                         <div className="tp-product-details-action-sm">
                            <button type="button" className="tp-product-details-action-sm-btn">

@@ -1387,10 +1387,10 @@ div.demo img {
 	font-family: var(--tp-ff-jost);
 	font-weight: 400;
 	font-size: 16px;
-	background-color: var(--tp-common-black);
+	background-color: var(--tp-theme-secondary);
 	padding: 9px 26px;
-	color: var(--tp-common-white);
-	border: 1px solid var(--tp-common-black);
+	color: var(--tp-theme-primary);
+	border: 1px solid var(--tp-theme-secondary);
 }
 
 .tp-btn:hover {
@@ -15502,7 +15502,7 @@ only screen and (min-width: 576px) and (max-width: 767px) {
 	line-height: 1.5;
 	padding: 20px;
 	resize: none;
-	height: 200px;
+	height: 120px;
 	resize: none;
 }
 
@@ -15791,13 +15791,13 @@ only screen and (min-width: 576px) and (max-width: 767px) {
 	position: absolute;
 	bottom: 8px;
 	right: 8px;
-	color: var(--tp-common-white);
+	color: var(--tp-common-black);
 	width: 30px;
 	height: 30px;
 	line-height: 24px;
-	border: 2px solid var(--tp-common-white);
+	border: 2px solid var(--tp-theme-secondary);
 	text-align: center;
-	background-color: var(--tp-theme-primary);
+	background-color: var(--tp-theme-secondary);
 	border-radius: 50%;
 }
 
@@ -15878,10 +15878,10 @@ only screen and (min-width: 576px) and (max-width: 767px) {
 	right: -8px;
 	width: 25px;
 	height: 25px;
-	line-height: 20px;
-	border: 2px solid var(--tp-common-white);
-	background-color: var(--tp-theme-primary);
-	color: var(--tp-common-white);
+	line-height: 25px;
+	border: 2px solid var(--tp-theme-secondary);
+	background-color: var(--tp-theme-secondary);
+	color: var(--tp-theme-black);
 	border-radius: 50%;
 	font-size: 13px;
 	font-weight: 500;
@@ -22937,7 +22937,7 @@ only screen and (min-width: 576px) and (max-width: 767px),
 /*  8.20 Order CSS
 /*----------------------------------------*/
 .tp-order-details {
-	padding: 70px 100px 55px;
+	padding: 45px 90px 45px;
 }
 
 @media only screen and (min-width: 1200px) and (max-width: 1399px) {
@@ -22970,31 +22970,31 @@ only screen and (min-width: 576px) and (max-width: 767px),
 
 .tp-order-details-icon span {
 	display: inline-block;
-	width: 120px;
-	height: 120px;
-	line-height: 118px;
+	width: 110px;
+	height: 110px;
+	line-height: 110px;
 	text-align: center;
 	font-size: 55px;
-	color: var(--tp-common-white);
-	border: 1px solid rgba(255, 255, 255, 0.2);
+	color: var(--tp-theme-primary);
+	border: 1px solid var(--tp-theme-primary);
 	border-radius: 50%;
 }
 
 .tp-order-details-title {
 	font-size: 30px;
 	font-weight: 600;
-	color: var(--tp-common-white);
+	color: var(--tp-theme-primary);
 	margin-bottom: 7px;
 }
 
 .tp-order-details-content p {
 	font-size: 16px;
-	color: var(--tp-common-white);
+	color: var(--tp-theme-black);
 	line-height: 1.38;
 }
 
 .tp-order-details-item {
-	margin-bottom: 38px;
+	margin-bottom: 25px;
 }
 
 .tp-order-details-item-wrapper .row [class*=col-]:nth-child(2n) .tp-order-details-item {
@@ -23009,33 +23009,21 @@ only screen and (min-width: 576px) and (max-width: 767px),
 
 .tp-order-details-item h4 {
 	font-size: 18px;
-	color: var(--tp-common-white);
+	color: var(--tp-theme-primary);
 	margin-bottom: 0;
 	font-weight: 400;
 }
 
 .tp-order-details-item p {
-	font-weight: 700;
-	font-size: 18px;
-	color: var(--tp-common-white);
+	font-size: 14px;
+	color: var(--tp-theme-black);
 	margin-bottom: 0;
 }
 
 .tp-order-info-wrapper {
-	padding: 42px 50px;
+	padding: 30px 50px;
 }
 
-@media only screen and (min-width: 992px) and (max-width: 1199px) {
-	.tp-order-info-wrapper {
-		padding: 42px 40px;
-	}
-}
-
-@media (max-width: 575px) {
-	.tp-order-info-wrapper {
-		padding: 42px 30px;
-	}
-}
 
 .tp-order-info-title {
 	font-size: 26px;

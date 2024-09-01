@@ -178,7 +178,7 @@ const page = () => {
                         </div>
                      </div>
                      <div className="tp-checkout-btn-wrapper">
-                        <a href="#" className="tp-checkout-btn w-100">Place Order</a>
+                        <a href="#" className="tp-checkout-btn w-100">Order Now</a>
                      </div>
                   </div>
                </div>
