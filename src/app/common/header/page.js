@@ -96,16 +96,16 @@ export default function Header() {
                                     </div>
                                     <div className="tp-header-action d-flex align-items-center gap-xl-3 ms-xl-5">
                                        <div className="tp-header-action-item d-none d-lg-block">
-                                          <a href="#" className="tp-header-action-btn">
+                                          <Link href={`/wishlist`} className="tp-header-action-btn">
                                           <FaRegHeart/>
                                              <span className="tp-header-action-badge">4</span>                          
-                                          </a>
+                                          </Link>
                                        </div>
                                        <div className="tp-header-action-item">
-                                             <button className="tp-header-action-btn cartmini-open-btn" >
+                                          <Link href={`/cart`} className="tp-header-action-btn cartmini-open-btn" >
                                              <BsHandbag/>   
                                              <span className="tp-header-action-badge">13</span>                                                                          
-                                          </button>
+                                          </Link>
                                        </div>
                                        <div className="tp-header-action-item">
                                           <Link href={`/authentication/login`} className="d-flex align-items-center btn btn-primary" >
@@ -119,8 +119,6 @@ export default function Header() {
                         </div>
                      </div>
                   </div>
-
-                
                </div>
             </header>
         </>

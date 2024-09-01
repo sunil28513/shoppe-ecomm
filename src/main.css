@@ -22685,11 +22685,11 @@ only screen and (min-width: 576px) and (max-width: 767px),
 .tp-cart-list tr td .tp-cart-action-btn {
 	font-weight: 400;
 	font-size: 14px;
-	color: #818487;
+	color: var(--tp-theme-black);
 }
 
 .tp-cart-list tr td .tp-cart-action-btn:hover {
-	color: #FF1826;
+	color: var(--tp-theme-secondary);
 }
 
 .tp-cart-list tr td.tp-cart-add-to-cart .tp-btn {
@@ -22712,10 +22712,11 @@ only screen and (min-width: 576px) and (max-width: 767px),
 }
 
 .tp-cart-title a {
-	margin-left: 20px;
+	padding-left: 10px;
 	font-weight: 400;
 	font-size: 16px;
 	color: var(--tp-common-black);
+	display: block;
 }
 
 .tp-cart-title a:hover {
@@ -22785,8 +22786,8 @@ only screen and (min-width: 576px) and (max-width: 767px),
 .tp-cart-coupon-input button {
 	font-weight: 500;
 	font-size: 16px;
-	color: var(--tp-common-white);
-	background-color: var(--tp-common-black);
+	color: var(--tp-common-black);
+	background-color: var(--tp-theme-secondary);
 	padding: 10px 30px;
 }
 
@@ -22920,8 +22921,8 @@ only screen and (min-width: 576px) and (max-width: 767px),
 .tp-cart-checkout-btn {
 	font-size: 16px;
 	font-weight: 500;
-	color: var(--tp-common-white);
-	background-color: var(--tp-common-black);
+	color: var(--tp-common-black);
+	background-color: var(--tp-theme-secondary);
 	display: inline-block;
 	padding: 10px 30px;
 	text-align: center;
