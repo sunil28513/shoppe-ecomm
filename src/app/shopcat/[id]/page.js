@@ -1,10 +1,13 @@
 // "use client"
 import React from 'react';
 import Link from 'next/link';
-import { BsFacebook, BsHeart, BsLinkedin, BsPlus, BsTwitter } from 'react-icons/bs';
+import { BsFacebook, BsHeart, BsLinkedin, BsPlus, BsShare, BsTwitter } from 'react-icons/bs';
 import { FaMinus } from 'react-icons/fa';
 import { FaPlus } from 'react-icons/fa6';
 import RelatedProducts from './RelatedProducts';
+import ProductDetailImages from './ProductDetailImages';
+import { MdLocationPin, MdOutlineStar, MdOutlineStarHalf, MdOutlineStarOutline, MdSunnySnowing } from 'react-icons/md';
+import { BiSun } from 'react-icons/bi';
 
 const ProductDetails = async ({ params }) => {
   const { id } = params;
@@ -13,6 +16,13 @@ const ProductDetails = async ({ params }) => {
   const res = await fetch(`https://fakestoreapi.com/products/${id}`);
 
   const product = await res.json();
+
+
+  const { rate } = product.rating;
+  // Calculate the number of full stars, half stars, and empty stars
+  const fullStars = Math.floor(rate);
+  const halfStars = rate % 1 >= 0.5 ? 1 : 0;
+  const emptyStars = 5 - fullStars - halfStars;
 
   return (
     <>
@@ -35,112 +45,104 @@ const ProductDetails = async ({ params }) => {
      <section className='pt-4 pb-60'>
         <div className="container-fluid">
             <div className="row justify-content-between">
-              <div className="col-md-7">
-                  <div className="row row-gap-3">
-                     <div className="col-6 col-md-6">
-                        {/* <img className='img-fluid' src={product.image} alt={product.title} /> */}
-                        <img className='img-fluid border' src="https://cdn.caratlane.com/media/catalog/product/U/T/UT00709-1Y0000_1_lar.jpg" alt={product.title} />
-                     </div>
-                     <div className="col-6 col-md-6">
-                        <img className='img-fluid border' src={`https://cdn.caratlane.com/media/catalog/product/U/T/UT00709-1Y0000_3_lar.jpg`} alt={product.title} />
-                     </div>
-                     <div className="col-6 col-md-6">
-                        <img className='img-fluid border' src={`https://cdn.caratlane.com/media/catalog/product/U/T/UT00709-1Y0000_4_lar.jpg`} alt={product.title} />
-                     </div>
-                     <div className="col-6 col-md-6">
-                        <img className='img-fluid border' src={`https://cdn.caratlane.com/media/catalog/product/U/T/UT00709-1Y0000_6_lar.jpg`} alt={product.title} />
-                     </div>
-                     <div className="col-6 col-md-6">
-                        <img className='img-fluid border' src={`https://cdn.caratlane.com/media/catalog/product/J/T/JT00935-1YP900_6_lar.jpg`} alt={product.title} />
-                     </div>
-                     <div className="col-6 col-md-6">
-                        <img className='img-fluid border' src={`https://cdn.caratlane.com/media/catalog/product/J/T/JT00935-1YP900_6_lar.jpg`} alt={product.title} />
-                     </div>
-                  </div>
+              <div className="col-md-8">
+                  <ProductDetailImages/>
               </div>
-              <div className="col-md-5">
+              <div className="col-md-4">
                   <div className="tp-product-details-wrapper position-sticky t-10">
-                        <div className="tp-product-details-category">
-                           <span>{product.category}</span>
-                        </div>
-                        <h3 className="tp-product-details-title">{product.title}</h3>
-
                         <div className="tp-product-details-inventory d-flex align-items-center mb-10">
                            <div className="tp-product-details-stock mb-10">
                               <span>In Stock</span>
                            </div>
                            <div className="tp-product-details-rating-wrapper d-flex align-items-center mb-10">
                               <div className="tp-product-details-rating">
-                                 <span><i className="fa-solid fa-star"></i></span>
-                                 <span><i className="fa-solid fa-star"></i></span>
-                                 <span><i className="fa-solid fa-star"></i></span>
-                                 <span><i className="fa-solid fa-star"></i></span>
-                                 <span><i className="fa-solid fa-star"></i></span>
+                              <span title={`Product Rating : ${rate}`}>
+                                 {product.rating.rate}<MdOutlineStar />
+                              </span>
                               </div>
                               <div className="tp-product-details-reviews">
-                                 <span>(36 Reviews)</span>
+                                 <span>({product.rating.count} Ratings)</span>
                               </div>
                            </div>
                         </div>
-                        <p>{product.description}</p>
-
                         <div className="tp-product-details-price-wrapper mb-20">
-                           <span className="tp-product-details-price old-price">$320.00</span>
-                           <span className="tp-product-details-price new-price">$236.00</span>
+                           <p className="tp-product-details-price new-price mb-0">${product.price}</p>
+                           <span>MRP inclusive of all taxes</span>
                         </div>
-
+                        <h1 className="tp-product-details-title">{product.title}</h1>
+                        <p>{product.description}</p>
                         <div className="tp-product-details-action-wrapper">
-                           <h3 className="tp-product-details-action-title">Quantity</h3>
-                           <div className="tp-product-details-action-item-wrapper d-flex align-items-center">
-                              <div className="tp-product-details-quantity">
-                                 <div className="tp-product-quantity mb-15 mr-15">
-                                    <span className="tp-cart-minus">
-                                       <FaMinus/>                                                           
-                                    </span>
-                                    <input className="tp-cart-input" type="text" />
-                                    <span className="tp-cart-plus">
-                                       <FaPlus/>
-                                    </span>
+                           <div className='d-flex align-items-center gap-3'>
+                              <div className="tp-product-details-action-item-wrapper w-75">
+                                 <div className="tp-product-details-add-to-cart">
+                                    <button className="btn btn-primary w-100">Add To Cart</button>
                                  </div>
                               </div>
-                              <div className="tp-product-details-add-to-cart mb-15 w-100">
-                                 <button className="tp-product-details-add-to-cart-btn w-100">Add To Cart</button>
+                              <button type="button" className="btn btn-outline-primary">
+                                 <BsHeart/>
+                              </button>
+                              <button type="button" className="btn btn-outline-primary">
+                                 <BsShare/>
+                              </button>
+                              {/* <Link href="/cart"  className="tp-product-details-buy-now-btn text-center">Buy Now</Link> */}
+                           </div>
+                        </div>
+                        <div className="tp-product-details-query pt-4">
+                           <h5 className='pb-2'>Delivery, Stores & Trial</h5>
+                           <div className='plocation position-relative'>
+                              <span className='pin'><MdLocationPin /></span>
+                              <input type="text" placeholder='Enter Pincode' />
+                              <span className='locateme'>Locate Me</span>
+                           </div>
+                        </div>
+                        <div className='policies d-flex justify-content-evenly py-3'>
+                           <div className='text-center'>
+                              <span width="40px" height="40px" class="common-icon css-1l7t0mg"></span>
+                              <p>100% <br />Certified</p>
+                           </div>
+                           <div className='text-center'>
+                              <span width="40px" height="40px" class="common-icon css-1b2zvb0 "></span>
+                              <p>15 days<br />Moneyback</p>
+                           </div>
+                           <div className='text-center'>
+                              <span width="40px" height="40px" class="common-icon css-gglao5"></span>
+                              <p>Lifetime <br />Exchange</p>
+                           </div>
+                           <div className='text-center'>
+                              <span width="40px" height="40px" class="common-icon css-19nnhma"></span>
+                              <p>1 year  <br />Warranty</p>
+                           </div>
+                        </div>
+
+                        <div className="card mt-20 pdetailcard">
+                           <div className="card-header">
+                               <h6><MdSunnySnowing/> Gold</h6>
+                           </div>
+                           <div className="card-body">
+                              <div className="d-flex justify-content-between">
+                                  <div>
+                                      <h6>Type</h6>
+                                      <p>GH-SI</p>
+                                  </div>
+                                  <div>
+                                      <h6>Setting</h6>
+                                      <p>Setting : Micro Prong</p>
+                                      <p>Total No. : 57</p>
+                                  </div>
+                                  <div>
+                                      <h6>Total Weight</h6>
+                                      <p>0.314 ct</p>
+                                  </div>
                               </div>
                            </div>
-                           <Link href="/cart"  className="tp-product-details-buy-now-btn w-100 text-center">Buy Now</Link>
                         </div>
-                        <div className="tp-product-details-action-sm">
-                           <button type="button" className="tp-product-details-action-sm-btn">
-                              <BsHeart/>
-                              Add Wishlist
-                           </button>
-                        </div>
-                        <div className="tp-product-details-query">
-                           <div className="tp-product-details-query-item d-flex align-items-center">
-                              <span>SKU:  </span>
-                              <p>NTB7SDVX44</p>
-                           </div>
-                           <div className="tp-product-details-query-item d-flex align-items-center">
-                              <span>Category:  </span>
-                              <p>Computers & Tablets</p>
-                           </div>
-                           <div className="tp-product-details-query-item d-flex align-items-center">
-                              <span>Tag: </span>
-                              <p>Android</p>
-                           </div>
-                        </div>
-                        <div className="tp-product-details-social">
-                           <span>Share: </span>
-                           <a href="#"><BsFacebook/> </a>
-                           <a href="#"><BsTwitter/></a>
-                           <a href="#"><BsLinkedin/></a>
-                        </div>
+
                      </div>
               </div>
             </div>
         </div>
      </section>
-<hr />
+      <hr />
      <RelatedProducts/>
     </>
   );

@@ -2,7 +2,7 @@
 import React, { useRef } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import 'swiper/css/navigation';
-import { Navigation, Scrollbar, Pagination, Autoplay } from 'swiper/modules';
+import { Navigation, Scrollbar, Autoplay } from 'swiper/modules';
 import { CartIcon, EyeIcon, WishListIcon } from '../../SvgIcons';
 import { MdOutlineStar, MdOutlineStarHalf } from "react-icons/md";
 
@@ -66,7 +66,6 @@ const RelatedProducts = () => {
                         className="mySwiper"
                         spaceBetween={30}
                         slidesPerView={4}
-                        pagination={{ clickable: true }}
                         autoplay={{ delay: 3000 }}
                         loop
                         navigation={{
@@ -77,7 +76,7 @@ const RelatedProducts = () => {
                             swiper.params.navigation.prevEl = prevRef1.current;
                             swiper.params.navigation.nextEl = nextRef1.current;
                         }}
-                        modules={[Navigation, Pagination, Autoplay, Scrollbar]}
+                        modules={[Navigation, Autoplay, Scrollbar]}
                         breakpoints={{
                             320: {
                                 slidesPerView: 2,

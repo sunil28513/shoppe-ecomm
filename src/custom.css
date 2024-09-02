@@ -14,6 +14,17 @@
     border-color: var(--tp-theme-secondary);
     color: var(--tp-common-black);
 }
+
+.btn-outline-primary{
+    border-color: var(--tp-theme-secondary);
+    color: var(--tp-theme-primary);
+}
+.btn-outline-primary:hover{
+    background-color: var(--tp-theme-secondary);
+    border-color: var(--tp-theme-secondary);
+    color: var(--tp-theme-primary);
+}
+
 .productcat img{
     width: 100%;
 }
@@ -54,4 +65,66 @@ section.tp-slider-area img{
 
 .t-10{
     top:100px
+}
+
+.plocation .pin {
+    position: absolute;
+    left: 10px;
+    top: 7px;
+    font-size: 18px;
+    color: var(--tp-theme-primary);
+}
+.plocation .locateme {
+    position: absolute;
+    right: 15px;
+    top: 8px;
+    color: var(--tp-theme-primary);
+    cursor: pointer;
+}
+.plocation input{
+    padding-left: 35px !important;
+    border-color: var(--tp-theme-primary) !important;
+}
+.policies p{
+    line-height: 1.3;
+}
+.common-icon {
+    background: url(https://assets.cltstatic.com/images/responsive/pdp-sprites/cl-advantage-sprite.png?v2.0) no-repeat;
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+    cursor: pointer;
+    background-size: 200px;
+}
+
+.css-1l7t0mg {
+    background-position: -56px -10px;
+}
+
+.css-1b2zvb0 {
+    background-position: -9px -10px;
+}
+
+.css-gglao5 {
+    background-position: -99px -10px;
+}
+
+.css-19nnhma {
+    background-position: -145px -10px;
+}
+
+.pdetailcard{
+    background: #fce9d9;
+}
+.pdetailcard .card-body{
+    background-color: #fff3e9;
+}
+
+.pdetailcard, .pdetailcard .card-header{
+    border: none;
+}
+.pdetailcard p{
+    margin: 0px;
+    font-size: 12px;
+    line-height: 1.5;
 }
