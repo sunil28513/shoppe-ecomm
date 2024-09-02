@@ -62,8 +62,8 @@ const Wishlist = () => {
                   <tbody>
                     {cartItems.map((item) => (
                       <tr key={item.id}>
-                        <td className="tp-cart-img"><a href="product-details.html"><img src={item.image} alt={item.title} /></a></td>
-                        <td className="tp-cart-title"><a href="product-details.html">{item.title}</a></td>
+                        <td className="tp-cart-img"><a href="#"><img src={item.image} alt={item.title} /></a></td>
+                        <td className="tp-cart-title"><a href="#">{item.title}</a></td>
                         <td className="tp-cart-price"><span>${item.price.toFixed(2)}</span></td>
                         <td className="tp-cart-quantity">
                           <div className="tp-product-quantity mt-10 mb-10">

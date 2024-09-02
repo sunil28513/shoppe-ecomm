@@ -17,6 +17,32 @@
         font-size: 16px;
         color: var(--tp-theme-secondary) !important;
     }
+    .mobilemenus img{
+        width: 65px;
+        object-fit: contain;
+    }
+    .mobilemenus .card{
+        width: 100%;
+    }
+    .mobilemenus .card-body{
+        padding: 5px 10px;
+        width: 100%;
+    }
+    .mobilemenus h6{
+        font-size: 14px;
+        margin: 0px 0px 5px;
+    }
+    .mobilemenus p{
+        line-height: 1;
+        font-size: 12px;
+        margin: 0px;
+    }
+
+    .mobileaccount {
+        padding: 40px 20px;
+        background: #f3f3f3;
+    }
+
 }
 
 @media (max-width:767px){
@@ -95,6 +121,9 @@
     }
     .tp-search-area{
         padding: 20px 15px 10px !important;
+    }
+    .tp-cart-list tbody tr:first-child td {
+        padding-top: 10px !important;
     }
 }
 
