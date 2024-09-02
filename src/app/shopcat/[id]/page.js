@@ -8,6 +8,7 @@ import RelatedProducts from './RelatedProducts';
 import ProductDetailImages from './ProductDetailImages';
 import { MdLocationPin, MdOutlineStar, MdOutlineStarHalf, MdOutlineStarOutline, MdSunnySnowing } from 'react-icons/md';
 import { BiSun } from 'react-icons/bi';
+import Customize from './Customize';
 
 const ProductDetails = async ({ params }) => {
   const { id } = params;
@@ -71,6 +72,7 @@ const ProductDetails = async ({ params }) => {
                         </div>
                         <h1 className="tp-product-details-title">{product.title}</h1>
                         <p>{product.description}</p>
+                        <Customize/>
                         <div className="tp-product-details-action-wrapper">
                            <div className='d-flex align-items-center gap-3'>
                               <div className="tp-product-details-action-item-wrapper w-75">
@@ -136,8 +138,7 @@ const ProductDetails = async ({ params }) => {
                               </div>
                            </div>
                         </div>
-
-                     </div>
+                  </div>
               </div>
             </div>
         </div>

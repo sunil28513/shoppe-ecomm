@@ -37,7 +37,8 @@ const ProductDetailImages = () => {
             }}
             autoplay={{ delay: 3000 }}
             loop
-            modules={[Navigation, Pagination, Autoplay]}
+            // modules={[Navigation, Pagination, Autoplay]}
+            modules={[Navigation, Pagination]}
         >
           {images.map((image, index) => (
             <SwiperSlide key={index}>
