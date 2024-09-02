@@ -112,10 +112,10 @@ const MobileMenus = () => {
                                 </div>
                                 <Link className='text-primary' href={`/`}>Logout</Link>
                             </div>
-                            <Link className='py-2 d-block' href={`/profile`}>Account</Link>
+                            <Link onClick={handleLinkClick} className='py-2 d-block' href={`/profile`}>Account</Link>
                             <Link href={`/shopcat`} onClick={handleLinkClick} className='btn btn-primary w-100 mt-10'>Find Store</Link>
                         </div>
-                        
+
 
                     </div>
                 </Offcanvas.Body>
