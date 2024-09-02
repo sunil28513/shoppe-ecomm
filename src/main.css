@@ -1796,11 +1796,11 @@ div.demo img {
 	font-weight: 500;
 	font-size: 14px;
 	line-height: 1;
-	color: var(--tp-common-white);
-	background-color: var(--tp-common-black);
+	color: var(--tp-theme-primary);
+	background-color: var(--tp-theme-secondary);
 	display: inline-block;
 	padding: 13px 35px 9px;
-	border: 1px solid var(--tp-common-black);
+	border: 1px solid var(--tp-theme-secondary);
 }
 
 .tp-filter-btn:hover {

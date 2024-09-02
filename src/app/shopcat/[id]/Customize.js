@@ -14,7 +14,7 @@ const Customize = () => {
             <div className="customizebutton">
                 <button 
                     onClick={handleShow} 
-                    className='btn btn-block btn-outline-primary w-100 pt-10 pb-10 mb-3'
+                    className='btn btn-block btn-warning w-100 mb-3'
                 >
                     Customise
                 </button>
