@@ -43,6 +43,11 @@
         background: #f3f3f3;
     }
 
+    .profile__tab .nav-tabs .nav-link {
+        font-size: 12px;
+        padding: 8px 30px;
+    }
+
 }
 
 @media (max-width:767px){
